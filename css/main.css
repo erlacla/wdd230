@@ -1,0 +1,44 @@
+/* Fonts from Google Fonts - more at https://fonts.google.com */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+@import url('https://fonts.googleapis.com/css?family=Merriweather:400,700');
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Zilla+Slab:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+
+body {
+    font-size: 18px;
+    line-height: 1.3;
+    background-color: lightblue;
+    font-family: "Open Sans", sans-serif;
+}
+
+header, main, footer {
+    margin: 2.55rem auto;
+    max-width: 750px;
+}
+
+header {
+    font-size: 20px;
+    font-family: "Lobster Two", ariel, sans-serif;
+    background-color: rgb(19, 148, 180);
+    color: #000;
+    text-align: center;
+    padding: 0.1rem;
+    border-radius: 10px;
+}
+
+footer {
+    background-color:  rgb(19, 148, 180);
+    text-align: center;
+    color: #000; 
+    margin: 1.25rem;
+    border-radius: 10px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: .8em;
+    padding: 6px;
+}
+
+img {
+    float: right;
+    margin: 10px;
+}
