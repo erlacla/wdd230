@@ -1,0 +1,15 @@
+@media only screen and (min-width: 32.5em){
+    header {
+        border-radius: 10px;
+      }
+
+      footer {
+        border-radius: 10px;
+      }
+
+      img {
+        box-shadow: 0 0 20px #444;
+        float: right;
+        border-radius: 10px;
+      }
+}
