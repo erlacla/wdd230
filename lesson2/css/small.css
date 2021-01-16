@@ -36,6 +36,7 @@ main section h2 {
   background-color: #acc18a;
   border-bottom: 2px solid rgb(0, 0, 0);
   padding: 1rem;
+  margin: 0rem;
   margin-left: -1rem;
   margin-right: -1rem;
   border-radius: 10px 10px 0 0;
