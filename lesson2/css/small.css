@@ -56,6 +56,6 @@ img {
   box-shadow: 0 0 30px #333;
   border: 1px solid black;
   display: block;
-  margin-left: 0;
-  margin-right: 0;
+  margin-right: auto;
+  margin-left: auto;
 }
