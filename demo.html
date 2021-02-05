@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.button {
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+/* button:focus {
+	outline: 0;
+	box-shadow: 0 0 8px 3px rgba(255, 255, 255, 0.8);
+}
+button:hover,
+button:focus {
+background-color:rgba(241, 235, 235, 0.76);
+color: black;
+text-decoration: underline; 
+} */
+
+.button1 {background-color: #4CAF50;} 
+.button2 {background-color: #008CBA;} 
+.button3 {background-color: rgb(255, 0, 0);}
+</style>
+</head>
+<body>
+
+<button class="button button1">Green</button>
+<button class="button button2">Blue</button>
+<button class="button button3">Red</button>
+<button type="button">
+    I am a blue button! Click me!
+    </button>
+    <button type="button" onclick="alert('Hi user!')">Press me!</button>
+    <p>This button transfers you to another website!</p>
+<a href="http://bitdegree.org" target="_blank">
+    <button>Click me!</button>
+    <button type="button" autofocus>Hello World!</button>
+    <button type="submit" disabled>Register</button>
+    <form action="http://www.bitdegree.org/" method="GET" id="Search">
+        Search Term: <input type="text" name="search_query">
+      </form>
+      <button type="submit" form="Search">Search</button>
+      <form action="https://www.bitdegree.org/learn/html-button/#ltbuttongt" method="GET">
+        Search Term: <input type="text" name="q">
+        <button type="submit" formaction="https://www.google.com/search">Search</button>
+      </form>
+      <form action="https://www.bitdegree.org/learn/best-code-editor/?example=27003" method="get">
+        Select Image: <input type="file" name="uploaded_filename">
+        <button type="submit" formenctype="multipart/form-data">Upload</button>
+      </form>
+      <form action="search" method="GET">
+        Search Term: <input type="text" name="search_query">
+        <button type="submit" formmethod="get">Search</button>
+      </form>
+      <form action="search" method="GET">
+        Search Term: <input type="text" name="search_query">
+        <button type="submit" name="search">Search</button>
+      </form>
+
+</body>
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <title>Beautiful Idaho Sky</title>
+    <meta
+      name="description"
+      content="Stay updated with current weather conditions and news 
+    in south-east Idaho, here at Beautiful Idaho Sky. We help build a tight knit community."
+    />
+    <link
+      rel="shortcut icon" href="../favicon.ico" type="image/x-icon"
+    />
+    <link rel="stylesheet" href="../css/normalize.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fenix&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/small.css" />
+    <link rel="stylesheet" href="css/medium.css" />
+    <link rel="stylesheet" href="css/large.css" />
+  </head>
+  <body>
+    <header>
+      <img src="images/logo.jpg" alt="Beautiful Idaho Sky Logo" />
+      <section class="headings">
+        <h1>Beautiful Idaho Sky</h1>
+        <div>Where we all love the sky!</div>
+      </section>
+    </header>
+    <nav>
+      <button onclick="toggleMenu()">&#9776; Menu</button>
+      <ul id="nav" class="hide">
+        <li><a href="#">Home</a></li>
+        <li><a href="#" id="active">Preston</a></li>
+        <li><a href="#">Soda Springs</a></li>
+        <li><a href="#">Fish Haven</a></li>
+        <li><a href="#">Storm Center</a></li>
+        <li><a href="#">Gallery</a></li>
+      </ul>
+    </nav>
+    <main>
+        <div onLoad="date()" id="invite">Come to the weekly community pancake breakfast! Tomorrow at 9am! 
+            Don't miss it! Every Saturday in downtown Preston.</div>
+      <h2>Preston Idaho</h2>
+     <div class="position-weather-box">
+      <img id="idahoLake" src="images/hero.jpg" alt="An Idaho lake in Preston">
+      <section class="todaysWeather">
+          <h3>Today's weather:</h3>
+          <ul>
+              <li>Currently: Snow</li>
+              <li>Temperature: 28&#176;F</li>
+              <li>Wind: NW 10mph</li>
+              <li>Humidity: 49%</li>
+              <li>Visibility: .5 mi</li>
+          </ul>
+      </section>
+      </div>
+      <div>
+          <h2>5 Day Forecast</h2>
+          <div class="grid">
+              <div class="grid-lines">
+                  <span class="grid-top">Wednesday</span>
+                  <img src="images/snowicon.jpg" alt="Snow Icon">
+                  <span class="forecast">20% chance</span>
+              </div>
+              <div class="grid-lines">
+                  <span class="grid-top">Thursday</span>
+                  <img src="images/snowicon.jpg" alt="Snow Icon">
+                  <span class="forecast">50% chance</span>
+              </div>
+              <div class="grid-lines">
+                  <span class="grid-top">Friday</span>
+                  <img src="images/snowicon.jpg" alt="Snow Icon">
+                  <span class="forecast">100% chance</span>
+              </div>
+              <div class="grid-lines">
+                  <span class="grid-top">Saturday</span>
+                  <img src="images/snowicon.jpg" alt="Snow Icon">
+                  <span class="forecast">100% chance</span>
+              </div>
+              <div class="grid-lines">
+                  <span class="grid-top">Sunday</span>
+                  <img src="images/snowicon.jpg" alt="Snow Icon">
+                  <span class="forecast">10% chance</span>
+              </div>
+              
+          </div>
+        </div>
+      <section class="article">
+          <h2>A Great Place to Take the Family Sledding</h2>
+          <img id="sled" src="images/sleddingPic.jpg" alt="Child with sled in snow">
+          <p>Preston Mountain is one of the best places to let the kids zoom down slick hills on sleds and inner tubes. 
+              It even has teeny moguls for tots and lots of room for building snow men. You can purchase plastic snow sleds 
+              and on weekends and major holidays there are concessions that sell snacks, drinks and hot chocolate. 
+              Parking is convenient within a short walking distance to play areas. If you like snowshoeing, strap on the 
+              gear and get going. Preston Mountain is one of the best places to let the kids zoom down slick hills on sleds and inner tubes. 
+                It even has teeny moguls for tots and lots of room for building snow men. You can purchase plastic snow sleds 
+                and on weekends and major holidays there are concessions that sell snacks, drinks and hot chocolate. 
+                Parking is convenient within a short walking distance to play areas. If you like snowshoeing, strap on the 
+                gear and get going.</p>
+      </section>
+      
+    </main>
+    <footer>
+      <img id="preston-map" src="images/map.jpg" alt="Footer Map">
+      <section>
+          <h3>&copy;Beautiful Idaho Sky</h3>
+          <h4>Contact us!</h4>
+          <ul id="preston-contact">
+              <li>888 N Preston Dr.</li>
+              <li>beautiful@idahosky.com</li>
+              <li>1-800-777-9999</li>
+          </ul>
+<div class="social-media">
+    <img src="images/Facebookicon.jpg" alt="Facebook Icon">
+    <img src="images/Twittericon.jpg" alt="Twitter Icon">
+    <img src="images/Instagramicon.jpg" alt="Instagram Icon">
+    <img src="images/Youtubeicon.jpg" alt="Youtube Icon">
+</div>
+      </section>
+      
+      <span id="currentdate"></span>
+    </footer>
+    <script src="js/preston-5.js"></script>
+  </body>
+</html>
