@@ -23,4 +23,27 @@
   h1 {
     font-size: 30px;
   }
+  footer {
+    display: flex;
+  }
+  #preston-map {
+    width: 100%;
+  }
+  
+  .position-weather-box {
+    position: relative;
+    margin: 10px auto;
+  }
+  .todaysWeather {
+    border: 5px solid #5b3c80;
+    background-color: rgba(182, 134, 226, 0.7);
+    padding: 9px;
+    position: absolute;
+    top: 55px;
+    left: 55px;
+    font-family: "Fenix", serif;
+  }
+  header h1 {
+    max-width: 0;
+  }
 }
