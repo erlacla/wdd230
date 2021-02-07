@@ -23,5 +23,34 @@
     h1 {
       font-size: 30px;
     }
+    div img {
+      width: 80px;
+    }
+    .grid {
+      font-size: 20px;
+    }
+     #preston-map {
+      width: 30rem;
+    }
+    
+    .position-weather-box {
+      position: relative;
+      margin: 10px auto;
+    }
+    .todaysWeather {
+      
+      position: absolute;
+      top: 55px;
+      left: 55px;
+      
+    }
+    header h1 {
+      max-width: 500px;
+      font-size: 40px;
+    } 
+  
+  
+  
   }
+
   
