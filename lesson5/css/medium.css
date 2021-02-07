@@ -23,8 +23,13 @@
   h1 {
     font-size: 30px;
   }
-  div img {
-    width: 80px;
+  header div {
+    display: block;
+    font-size: 1rem;
+    margin-left: 2px;
+    font-style: italic;
+    font-family: "Fenix", serif;
+    text-align: center;
   }
   .grid-top {
     font-size: 20px;

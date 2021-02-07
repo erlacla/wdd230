@@ -18,11 +18,7 @@ header img {
 }
 
 header div {
-  font-size: 1rem;
-  margin-left: 2px;
-  font-style: italic;
-  font-family: "Fenix", serif;
-  text-align: center;
+  display: none;
 }
 header h1 {
   max-width: 200px;
@@ -149,7 +145,6 @@ footer a {
 
 section ul {
   list-style-type: none;
-  font-size: 10px;
   padding: 0;
 }
 .grid {
@@ -183,7 +178,7 @@ section ul {
 #fivedayforcast {
   margin-bottom: 5px;
 }
-div img {
+.snowicon {
   padding: 0.25rem;
   display: block;
   margin-right: auto;
@@ -212,7 +207,8 @@ div img {
 }
 .social-media {
   display: flex;
-  padding: 0;
+  align-items: center;
+  justify-content: center;
 }
 .footersection {
   padding: 2em;
