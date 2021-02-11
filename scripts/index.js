@@ -4,3 +4,11 @@ document.getElementById("currentdate").innerHTML = string;
 let d = new Date();
 let n = d.getFullYear();
 document.getElementById("currentyear").innerHTML = n;
+
+WebFont.load({
+    google: {
+      families: [
+         'fontfamilynameofyourchoice'
+      ]
+    }
+  });
