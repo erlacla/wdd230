@@ -3,10 +3,10 @@
     let windspeed = parseInt(document.getElementById("windspeed").innerText);
     if (temperature <= 50 && windspeed >= 3) {
         let factor = windChill(temperature, windspeed);
-        document.getElementById("output").innerHTML = factor + "℉";
+        document.getElementById("output").innerHTML = factor + "&#176;F";
     }
     else {
-        alert("No Wind Chill");
+        document.getElementById("output").innerHTML = "N/A";
     }
 
 function windChill(tempF, speed) {

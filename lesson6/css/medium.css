@@ -51,5 +51,8 @@
       max-width: 500px;
       font-size: 40px;
     }
+    body {
+      background-color: #a072d5;
+    }
   }
   

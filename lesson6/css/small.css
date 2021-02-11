@@ -27,7 +27,6 @@ header {
   
   body {
     color: #140a1f;
-    background-color: #a072d5;
     display: block;
     margin: 0 auto;
   }
@@ -80,9 +79,9 @@ header {
   }
   main {
     background-color: #fffcf7;
-    display: grid;
-    max-width: 1000px;
-    margin: 0 auto;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    
   }
   
   h1 {
@@ -95,8 +94,8 @@ header {
     color: #5b3c80;
     text-align: center;
     margin-top: 2rem;
-    font-size: 30px;
-    font-family: "Fenix", serif;
+    font-size: 33px;
+    font-family: 'Dancing Script', cursive; 
   }
   p {
     font-size: 20px;
