@@ -1,3 +1,6 @@
+html {
+  overflow-x: hidden;
+}
 header {
     background-color: #caffd0;
     display: flex;
@@ -141,6 +144,7 @@ header {
     height: auto;
     box-shadow: 0 0 30px rgb(41, 41, 41);
     margin-bottom: 20px;
+    margin-top: 20px;
   }
   
   section ul {
@@ -224,5 +228,8 @@ header {
     border: 8px dotted yellow;
     font-size: 40px;
     text-align: center;
+    border-radius: 100%;
+    width: 300px;
+    position: fixed;
   }
   

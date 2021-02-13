@@ -12,3 +12,5 @@ function toggleMenu() {
 today.getDate() == 5
   ? (pancake.style.display = "block")
   : pancake.style.display === "none";
+
+ 

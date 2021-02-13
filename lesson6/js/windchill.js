@@ -1,12 +1,12 @@
 
-    let temperature = parseInt(document.getElementById("temperature").innerText);
-    let windspeed = parseInt(document.getElementById("windspeed").innerText);
+    let temperature = parseInt(document.querySelector("#temperature").textContent);
+    let windspeed = parseInt(document.querySelector("#windspeed").textContent);
     if (temperature <= 50 && windspeed >= 3) {
         let factor = windChill(temperature, windspeed);
-        document.getElementById("output").innerHTML = factor + "&#176;F";
+        document.querySelector("#output").innerHTML = factor + "&#176;F";
     }
     else {
-        document.getElementById("output").innerHTML = "N/A";
+        document.querySelector("#output").innerHTML = "N/A";
     }
 
 function windChill(tempF, speed) {
