@@ -12,12 +12,11 @@ function toggleMenu() {
 if (today.getDay() == 5) {
   document.getElementById("pancake").style.display = "block";
 }
-  
 
-  let visit = localStorage.getItem('on_load_counter'); 
+let visit = localStorage.getItem("on_load_counter");
 if (visit === null) {
-    visit = 0;
+  visit = 0;
 }
 visit++;
 localStorage.setItem("on_load_counter", visit);
-document.querySelector('#visits').innerHTML = visit;
+document.querySelector("#visits").innerHTML = visit;

@@ -1,59 +1,57 @@
 @media only screen and (min-width: 40em) {
-    body {
-      max-width: 800px;
-    }
-    nav button {
-      display: none;
-    }
-    #nav {
-      display: flex;
-    }
-    nav ul li {
-      flex: 1 1 100%;
-      text-align: center;
-    }
-    nav ul.hide {
-      display: block;
-    }
-    header img {
-      width: 90px;
-      height: auto;
-      padding: 0.5rem;
-    }
-    h1 {
-      font-size: 30px;
-    }
-    header div {
-      display: block;
-      font-size: 1rem;
-      margin-left: 2px;
-      font-style: italic;
-      font-family: "Fenix", serif;
-      text-align: center;
-    }
-    .grid-top {
-      font-size: 20px;
-    }
-    #preston-map {
-      width: 30rem;
-    }
-  
-    .position-weather-box {
-      position: relative;
-      
-    }
-    .todaysWeather {
-      position: absolute;
-      bottom: 70px;
-      right: 70px;
-    }
-    
-    header h1 {
-      max-width: 500px;
-      font-size: 40px;
-    }
-    body {
-      background-color: #a072d5;
-    }
+  body {
+    max-width: 800px;
   }
-  
+  nav button {
+    display: none;
+  }
+  #nav {
+    display: flex;
+  }
+  nav ul li {
+    flex: 1 1 100%;
+    text-align: center;
+  }
+  nav ul.hide {
+    display: block;
+  }
+  header img {
+    width: 90px;
+    height: auto;
+    padding: 0.5rem;
+  }
+  h1 {
+    font-size: 30px;
+  }
+  header div {
+    display: block;
+    font-size: 1rem;
+    margin-left: 2px;
+    font-style: italic;
+    font-family: "Fenix", serif;
+    text-align: center;
+  }
+  .grid-top {
+    font-size: 20px;
+  }
+  #preston-map {
+    width: 30rem;
+  }
+
+  .position-weather-box {
+    position: relative;
+  }
+  .todaysWeather {
+    position: absolute;
+    bottom: 70px;
+    right: 70px;
+  }
+
+  header h1 {
+    max-width: 500px;
+    font-size: 40px;
+  }
+  body {
+    background-color: #a072d5;
+  }
+}
