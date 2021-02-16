@@ -1,0 +1,20 @@
+.grid {
+  display: grid;
+  justify-content: center;
+  
+}
+img {
+  padding: 20px; 
+  border: 15px double  rgb(44, 21, 104); 
+  margin: 20px;
+  filter: blur(0em);
+  transition: filter 0.5s;
+}
+img[data-src] {
+    filter: blur(0.2em);
+  }
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: rgb(36, 16, 88);
+  text-align: center;
+}
