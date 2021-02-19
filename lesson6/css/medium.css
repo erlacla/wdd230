@@ -54,4 +54,9 @@
   body {
     background-color: #a072d5;
   }
+  .gallery {
+    width: 793px;
+    grid-template-columns: 400px 400px;
+    justify-items: center;
+  }
 }
