@@ -200,11 +200,12 @@ section ul {
   padding: 1rem;
 }
 #preston-map {
-  max-width: 90%;
-  height: auto;
+  margin-top: 5px;
+  width: 80vw;
   margin-right: auto;
   margin-left: auto;
 }
+
 #preston-contact {
   list-style: none;
 }
@@ -242,12 +243,13 @@ footer div {
   border: 4px solid #140a1f;
   justify-items: center;
 }
-.gallery img:hover,
-.gallery img:focus {
+.gallery figure:hover,
+.gallery figure:focus {
   cursor: pointer;
   opacity: 0.6;
   border-radius: 2%;
   box-shadow: 10px 10px 50px rgb(26, 25, 25);
+  padding: 10px;
 }
 .gallery img {
   max-width: 100%;

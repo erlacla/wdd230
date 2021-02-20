@@ -35,7 +35,7 @@
     font-size: 20px;
   }
   #preston-map {
-    width: 30rem;
+    width: auto;
   }
 
   .position-weather-box {
