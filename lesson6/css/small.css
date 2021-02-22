@@ -231,6 +231,7 @@ footer div {
   grid-template-columns: 1fr;
   border: 4px solid #140a1f;
   justify-items: center;
+  font-family: "Fenix", serif;
 }
 .gallery img {
   max-width: 100%;
