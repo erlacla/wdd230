@@ -9,10 +9,6 @@ function toggleMenu() {
   document.querySelector("#nav").classList.toggle("hide");
 }
 
-if (today.getDay() == 5) {
-  document.getElementById("pancake").style.display = "block";
-}
-
 let visit = localStorage.getItem("on_load_counter");
 if (visit === null) {
   visit = 0;
