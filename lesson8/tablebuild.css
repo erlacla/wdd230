@@ -11,17 +11,16 @@ caption {
 tr {
   background-color: #e7ffed;
 }
-caption,
 table {
   box-shadow: 8px 8px 10px 1px #628ca6;
   margin-left: auto;
   margin-right: auto;
 }
-tfoot tr td,
-caption {
+thead th, tfoot tr td {
   background-color: #7fb9c2;
+  color: #000;
 }
-caption {
+thead th {
   font-size: 25px;
   font-weight: bold;
 }
