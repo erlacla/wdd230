@@ -238,7 +238,6 @@ footer div {
 }
 
 form {
-  color: #140a1f;
   background-color: #fffcf7;
   border: 3px solid #140a1f;
   width: 80%;
@@ -251,7 +250,7 @@ form {
   margin-bottom: 45px;
 }
 input {
-  height: 40px; 
+  height: 40px;
   caret-color: #a072d5;
   border-radius: 5px;
 }
@@ -262,13 +261,13 @@ input {
   margin-bottom: 20px;
   color: #140a14;
 }
-.rating{
-max-width: 150px;
-text-align: center;
-border: 2px solid #a072d5;
-padding: 10px;
+.rating {
+  max-width: 150px;
+  text-align: center;
+  border: 2px solid #a072d5;
+  padding: 10px;
 }
-input[type=radio] {
+input[type="radio"] {
   height: auto;
 }
 legend {
@@ -277,7 +276,6 @@ legend {
   padding: 5px;
   color: #140a1f;
   font-family: "Fenix", serif;
-  
 }
 fieldset {
   display: block;
@@ -286,15 +284,12 @@ fieldset {
   background-color: #caffd0;
   border-radius: 5px;
 }
-.clearfix {
-  overflow: auto;
-}
 fieldset div {
   max-width: 100%;
 }
-input[type=submit] {
-color: #140a1f;
-font-family: "Fenix", serif;
+input[type="submit"] {
+  color: #140a1f;
+  font-family: "Fenix", serif;
 }
 #thanks {
   text-align: center;
@@ -311,5 +306,5 @@ font-family: "Fenix", serif;
 #submitBtn:hover,
 #submitBtn:focus {
   background-color: #140a1f;
-color:  #fffcf7;
+  color: #fffcf7;
 }
