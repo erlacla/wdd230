@@ -34,4 +34,8 @@
   #preston-map {
     padding: 30px;
   }
+  fieldset {
+    max-width: 600px;
+  }
+  
 }
