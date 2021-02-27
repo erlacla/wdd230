@@ -304,4 +304,12 @@ font-family: "Fenix", serif;
   display: block;
   margin-right: auto;
   margin-left: auto;
+  background-color: #fffcf7;
+  font-family: "Fenix", serif;
+  color: #140a1f;
+}
+#submitBtn:hover,
+#submitBtn:focus {
+  background-color: #140a1f;
+color:  #fffcf7;
 }
