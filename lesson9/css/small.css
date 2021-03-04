@@ -341,6 +341,6 @@ html {
     margin-right: auto;
     margin-left: auto;
     position: absolute;
-    bottom: 5px;
-    right: 360px;
+    bottom: 1rem;
+    right: 22rem;
   }
