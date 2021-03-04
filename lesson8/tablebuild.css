@@ -27,8 +27,7 @@ thead th {
 tfoot tr td {
   font-size: 12px;
 }
-th,
-#color {
+tbody tr:nth-child(5) td:nth-child(3) {
   color: #fff;
   background-color: #628ca6;
 }
