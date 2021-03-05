@@ -17,19 +17,25 @@ const myTowns = [];
 myTowns.push(...preston, ...sodasprings, ...fishhaven);
 console.log(myTowns);
 
-myTowns.forEach((town) => {
+
+myTowns.forEach(town => {
     let card = document.createElement("section");
     let h2 = document.createElement("h2");
     let p = document.createElement("p");
     let p2 = document.createElement("p");
     let p3 = document.createElement("p");
     let p4 = document.createElement("p");
+    let image = document.createElement("img");
 
-    h2.textContent = `${myTowns.name}`;
-    p.textContent =  `${myTowns.motto}`;
-    p2.textContent = myTowns.yearFounded;
-    p3.textContent = myTowns.currentPopulation;
-    p4.textContent = myTowns.averageRainfall;
+    image.setAttribute("src", `${images/prestonSection.jpg}`);
+    image.setAttribute(
+      "alt",
+      
+    h2.textContent = `${town.name}`;
+    p.textContent =  `${town.motto}`;
+    p2.textContent = `${town.yearFounded}`;
+    p3.textContent = `${town.currentPopulation}`;
+    p4.textContent = `${town.averageRainfall}`;
     
     card.appendChild(h2);
     card.appendChild(p);
@@ -38,18 +44,19 @@ myTowns.forEach((town) => {
     card.appendChild(p4);
 
     document.querySelector("div.towns").appendChild(card);
-  
-});
   });
 
 
+});
 
 
 
 
 
 
-  
+
+
+
 
   const today = new Date();
 let currentDay = new Intl.DateTimeFormat("en-US", { dateStyle: "full" }).format(
