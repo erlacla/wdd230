@@ -171,13 +171,14 @@
   }
   .news {
     text-align: center;
-    border: 20px dotted #caffd0;
+    border: 10px dashed #caffd0;
     max-width: 70%;
     margin-right: auto;
     margin-left: auto;
     margin-top: 30px;
     padding: 20px;
     font-family: "Fenix", serif;
+    box-shadow: 0 0 30px rgb(41, 41, 41);
   }
   article{
     padding: 20px;

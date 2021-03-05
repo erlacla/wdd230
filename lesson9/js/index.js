@@ -27,29 +27,31 @@ myTowns.forEach(town => {
     let p4 = document.createElement("p");
     let image = document.createElement("img");
 
-    // image.setAttribute("src", `${images/prestonSection.jpg}`);
-    // image.setAttribute(
-    //   "alt",
+    image.id = "townImage";
+    image.src = "images/prestonSection.jpg";
       
     h2.textContent = `${town.name}`;
-    p.textContent =  `${town.motto}`;
-    p2.textContent = `${town.yearFounded}`;
-    p3.textContent = `${town.currentPopulation}`;
-    p4.textContent = `${town.averageRainfall}`;
+    p.textContent =  `Town motto: ${town.motto}`;
+    p2.textContent = `Year founded: ${town.yearFounded}`;
+    p3.textContent = `Current population: ${town.currentPopulation}`;
+    p4.textContent = `Avarage rainfall: ${town.averageRainfall}`;
     
     card.appendChild(h2);
     card.appendChild(p);
     card.appendChild(p2);
     card.appendChild(p3);
     card.appendChild(p4);
+    card.appendChild(image);
 
     document.querySelector("div.towns").appendChild(card);
   });
 
-
+  // myTowns[1].image.src ="images/prestonSection.jpg";
 });
 
-
+// preston.img.src = "images/prestonSection.jpg";
+// sodasprings.img.src = "images/sodaspringsSection.jpg";
+// fishhaven.img.src = "images/fishhavenSection.jpg";
 
 
 
