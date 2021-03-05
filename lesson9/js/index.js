@@ -27,9 +27,9 @@ myTowns.forEach(town => {
     let p4 = document.createElement("p");
     let image = document.createElement("img");
 
-    image.setAttribute("src", `${images/prestonSection.jpg}`);
-    image.setAttribute(
-      "alt",
+    // image.setAttribute("src", `${images/prestonSection.jpg}`);
+    // image.setAttribute(
+    //   "alt",
       
     h2.textContent = `${town.name}`;
     p.textContent =  `${town.motto}`;
