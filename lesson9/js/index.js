@@ -25,7 +25,7 @@ myTowns.forEach(town => {
     let image = document.createElement("img");
     let div = document.createElement("div");
 
-    image.id = `picture of ${town.name}`;
+    image.alt = `picture of ${town.name}`;
     image.src = `images/${town.photo}`;
       
     h2.textContent = `${town.name}`;
