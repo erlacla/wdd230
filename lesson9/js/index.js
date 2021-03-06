@@ -6,7 +6,6 @@ fetch(requestURL)
   })
   .then(function (jsonObject) {
     const towns = jsonObject["towns"];
-    console.log(towns);
   
 //filter array  
 const preston = towns.filter(x => x.name === "Preston");
@@ -15,8 +14,6 @@ const fishhaven = towns.filter(x => x.name === "Fish Haven");
 //combine 3 towns into new array
 const myTowns = [];
 myTowns.push(...preston, ...sodasprings, ...fishhaven);
-console.log(myTowns);
-
 
 myTowns.forEach(town => {
     let card = document.createElement("section");
@@ -27,15 +24,15 @@ myTowns.forEach(town => {
     let p4 = document.createElement("p");
     let image = document.createElement("img");
 
-    image.id = "townImage";
-    image.src = "images/prestonSection.jpg";
+    image.id = `picture of ${town.name}`;
+    image.src = `images/${town.photo}`;
       
     h2.textContent = `${town.name}`;
     p.textContent =  `Town motto: ${town.motto}`;
     p2.textContent = `Year founded: ${town.yearFounded}`;
     p3.textContent = `Current population: ${town.currentPopulation}`;
-    p4.textContent = `Avarage rainfall: ${town.averageRainfall}`;
-    
+    p4.textContent = `Average rainfall: ${town.averageRainfall}`;
+
     card.appendChild(h2);
     card.appendChild(p);
     card.appendChild(p2);
@@ -45,13 +42,8 @@ myTowns.forEach(town => {
 
     document.querySelector("div.towns").appendChild(card);
   });
-
-  // myTowns[1].image.src ="images/prestonSection.jpg";
 });
 
-// preston.img.src = "images/prestonSection.jpg";
-// sodasprings.img.src = "images/sodaspringsSection.jpg";
-// fishhaven.img.src = "images/fishhavenSection.jpg";
 
 
 
