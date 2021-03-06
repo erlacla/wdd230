@@ -173,9 +173,7 @@
     font-family: "Fenix", serif;
     box-shadow: 0 0 30px rgb(41, 41, 41);
   }
-  article {
-    padding: 20px;
-  }
+  
   .towns section {
     border: 5px solid #5b3c80;
     margin: 40px;
