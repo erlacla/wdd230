@@ -16,26 +16,53 @@
     footer {
       display: flex;
     }
-    .gallery {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-      width: 1100px;
-      background-color: #fffcf7;
-      margin-left: -60px;
+    .homeHero {
+      max-width: 1089px;
+      margin-left: -50px;
     }
-    .gallery figure:hover,
-    .gallery figure:focus {
-      cursor: pointer;
-      opacity: 0.6;
-      border-radius: 2%;
-      box-shadow: 10px 10px 50px rgb(26, 25, 25);
-      padding: 10px;
+    .overHero {
+      width: 600px;
+    position: absolute;
+    top: 40px;
+    left: 180px;
     }
+    
+    .top {
+      position: relative;
+  }
+  .towns section {
+    border: 5px solid #5b3c80;
+    margin: 40px;
+    width: 350px;
+    height: 600px;
+    background-color: #fffcf7;
+    position: relative;
+    grid-template-columns: 1fr;
+  }
+  .towns section:last-child {
+    display: block;
+  }
+  .towns {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    width: 1200px;
+    margin-left: -130px;
+  }
+    
     #preston-map {
       padding: 30px;
     }
-    fieldset {
-      max-width: 600px;
+
+    .towns img {
+      width: 100%;
+      position: absolute;
+      left: 0px;
+      top: 0px;
+      z-index: 1;
     }
+    
+
+
+
   }
   

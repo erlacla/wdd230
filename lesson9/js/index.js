@@ -23,6 +23,7 @@ myTowns.forEach(town => {
     let p3 = document.createElement("p");
     let p4 = document.createElement("p");
     let image = document.createElement("img");
+    let div = document.createElement("div");
 
     image.id = `picture of ${town.name}`;
     image.src = `images/${town.photo}`;
@@ -33,11 +34,12 @@ myTowns.forEach(town => {
     p3.textContent = `Current population: ${town.currentPopulation}`;
     p4.textContent = `Average rainfall: ${town.averageRainfall}`;
 
-    card.appendChild(h2);
-    card.appendChild(p);
-    card.appendChild(p2);
-    card.appendChild(p3);
-    card.appendChild(p4);
+    div.appendChild(h2);
+    div.appendChild(p);
+    div.appendChild(p2);
+    div.appendChild(p3);
+    div.appendChild(p4);
+    card.appendChild(div);
     card.appendChild(image);
 
     document.querySelector("div.towns").appendChild(card);
@@ -61,10 +63,6 @@ date.textContent = currentDay;
 
 function toggleMenu() {
   document.querySelector("#nav").classList.toggle("hide");
-}
-
-if (today.getDay() == 5) {
-  document.getElementById("pancake").style.display = "block";
 }
 
 let visit = localStorage.getItem("on_load_counter");
