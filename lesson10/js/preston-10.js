@@ -3,16 +3,15 @@ const apiURL =
 fetch(apiURL)
   .then((response) => response.json())
   .then((jsObject) => {
-    console.log(jsObject);
     let temperature = Math.round(jsObject.main.temp);
     let windspeed = jsObject.wind.speed;
-    document.getElementById("current").textContent = jsObject.weather[0].description;
+    document.getElementById("current").textContent =
+      jsObject.weather[0].description;
     document.getElementById("temperature").textContent = temperature;
     document.getElementById("windspeed").textContent = windspeed;
-    document.getElementById("humidity").textContent = jsObject.main.humidity + "%";
+    document.getElementById("humidity").textContent =
+      jsObject.main.humidity + "%";
 
-    
-    
     if (temperature <= 50 && windspeed >= 3) {
       let factor = windChill(temperature, windspeed);
       document.querySelector("#output").innerHTML = factor + "&#176;F";
@@ -38,27 +37,26 @@ const forecast =
 fetch(forecast)
   .then((response) => response.json())
   .then((fObject) => {
-   
     const forecast5 = fObject.list.filter((x) => x.dt_txt.includes("18:00:00"));
-    console.log(forecast5);
     let day = 0;
-    const dayOfWeek = ['SUN', 'MON', 'TUE', 'WED', 'THR', 'FRI', 'SAT'];
-   
-    
-    forecast5.forEach(x => {
+    const dayOfWeek = ["SUN", "MON", "TUE", "WED", "THR", "FRI", "SAT"];
+
+    forecast5.forEach((x) => {
       let d = new Date(x.dt_txt);
-      document.getElementById(`day${day+1}`).textContent = dayOfWeek[d.getDay()];
-      document.getElementById(`forecast${day+1}`).innerHTML = Math.round(x.main.temp) + "&#176;F";
-      const src = 'https://openweathermap.org/img/wn/' + x.weather[0].icon + '@2x.png';
+      document.getElementById(`day${day + 1}`).textContent =
+        dayOfWeek[d.getDay()];
+      document.getElementById(`forecast${day + 1}`).innerHTML =
+        Math.round(x.main.temp) + "&#176;F";
+      const src =
+        "https://openweathermap.org/img/wn/" + x.weather[0].icon + "@2x.png";
       const alt = x.weather[0].description;
-      document.getElementById(`icon${day+1}`).setAttribute('src', src);  
-      document.getElementById(`icon${day+1}`).setAttribute('alt', `${alt} icon`);
-      day++
+      document.getElementById(`icon${day + 1}`).setAttribute("src", src);
+      document
+        .getElementById(`icon${day + 1}`)
+        .setAttribute("alt", `${alt} icon`);
+      day++;
     });
   });
- 
-
-
 
 const today = new Date();
 let currentDay = new Intl.DateTimeFormat("en-US", { dateStyle: "full" }).format(
