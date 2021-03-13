@@ -118,7 +118,7 @@ html {
   .todaysWeather {
     border: 5px solid #5b3c80;
     background-color: rgba(182, 134, 226, 0.7);
-    padding: 9px;
+    padding: 30px;
     font-family: "Fenix", serif;
     width: 200px;
     text-align: center;
@@ -126,6 +126,11 @@ html {
     margin-right: auto;
     margin-left: auto;
     border-radius: 100%;
+    
+  }
+ 
+  .todaysWeather ul {
+    line-height: 25px;
   }
   #idahoLake {
     width: 100%;
@@ -144,8 +149,8 @@ html {
     max-width: 580px;
     margin: 0 auto;
     text-align: center;
-    filter: brightness(170%);
-    background-color: rgba(85, 85, 85, 0.931);
+    background-color: lightgrey;
+    
   }
   .grid-top {
     display: block;
@@ -159,7 +164,10 @@ html {
   .grid-lines {
     border: 1px solid #5b3c80;
     margin: 3px;
-    
+    font-weight: bold;
+    letter-spacing: 3px;
+    font-family: "Fenix", serif;
+    padding-bottom: 25px;
   }
   .forecast {
     display: block;
@@ -169,13 +177,6 @@ html {
   }
   #fivedayforcast {
     margin-bottom: 5px;
-  }
-  .snowicon {
-    padding: 0.25rem;
-    display: block;
-    margin-right: auto;
-    margin-left: auto;
-    width: 55px;
   }
   .article {
     color: #140a1f;
@@ -224,102 +225,15 @@ html {
     width: 300px;
     position: fixed;
   }
+  #pancake h2 {
+    color: #140a1f;
+    margin-bottom: -30px;
+  }
+
   #visits,
   footer div {
     color: #a072d5;
     margin-top: 20px;
-  }
-  .gallery {
-    display: grid;
-    border: 4px solid #140a1f;
-    justify-items: center;
-    font-family: "Fenix", serif;
-  }
-  .gallery img {
-    max-width: 100%;
-    height: auto;
-  }
-  
-  form {
-    background-color: #fffcf7;
-    border: 3px solid #140a1f;
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 20px;
-    box-shadow: 0 0 30px rgb(41, 41, 41);
-    font-size: 20px;
-    font-family: "Fenix", serif;
-    margin-bottom: 45px;
-  }
-  input {
-    height: 40px;
-    caret-color: #a072d5;
-    border-radius: 5px;
-    padding-left: 10px;
-    margin-top: 5px;
-  }
-  .form-box {
-    padding: 10px;
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 20px;
-    color: #140a14;
-  }
-  .rating {
-    max-width: 150px;
-    text-align: center;
-    border: 2px solid #a072d5;
-    padding: 10px;
-  }
-  input[type="radio"] {
-    height: auto;
-  }
-  legend {
-    font-size: 16px;
-    text-decoration: underline;
-    padding: 5px;
-    color: #140a1f;
-    font-family: "Fenix", serif;
-  }
-  fieldset {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: #caffd0;
-    border-radius: 5px;
-  }
-  fieldset div {
-    max-width: 100%;
-    padding: 8px;
-  }
-  input[type="submit"] {
-    color: #140a1f;
-    font-family: "Fenix", serif;
-  }
-  #thanks {
-    text-align: center;
-    margin-bottom: 200px;
-  }
-  #submitBtn {
-    display: block;
-    margin-right: auto;
-    margin-left: auto;
-    background-color: #fffcf7;
-    font-family: "Fenix", serif;
-    color: #140a1f;
-  }
-  #submitBtn:hover,
-  #submitBtn:focus {
-    background-color: #140a1f;
-    color: #fffcf7;
-  }
-  #selectregion {
-    padding: 10px;
-  }
-  textarea {
-    padding: 10px;
-    margin-top: 5px;
   }
   #current {
     text-transform: capitalize;
