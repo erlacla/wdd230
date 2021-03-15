@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Beautiful Idaho Sky</title>
+    <meta
+      name="description"
+      content="Report current weather conditions and news. Here at Beautiful Idaho Sky. We help build a tight knit community."
+    />
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="../css/normalize.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fenix&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../lesson6/css/small.css" />
+    <link rel="stylesheet" href="../lesson6/css/medium.css" />
+    <link rel="stylesheet" href="../lesson6/css/large.css" />
+  </head>
+  <body>
+    <header>
+      <img src="images/logo.jpg" alt="Beautiful Idaho Sky Logo" />
+      <section class="headings">
+        <h1>Beautiful Idaho Sky</h1>
+        <div>Where we all love the sky!</div>
+      </section>
+    </header>
+    <nav>
+      <button onclick="toggleMenu()">&#9776; Menu</button>
+      <ul id="nav" class="hide">
+        <li><a href="https://erlacla.github.io/wdd230/lesson11/index">Home</a></li>
+        <li>
+          <a href="https://erlacla.github.io/wdd230/lesson11/preston"
+            >Preston</a
+          >
+        </li>
+        <li>
+          <a  href="https://erlacla.github.io/wdd230/lesson11/sodasprings">Soda Springs</a
+          >
+        </li>
+        <li>
+          <a href="https://erlacla.github.io/wdd230/lesson11/fishhaven"
+            >Fish Haven</a
+          >
+        </li>
+        <li>
+          <a href="#" id="active"
+            >Storm Center</a
+          >
+        </li>
+        <li>
+          <a href="https://erlacla.github.io/wdd230/lesson11/gallery"
+            >Gallery</a
+          >
+        </li>
+      </ul>
+    </nav>
+
+    <main>
+      <h2>Report a Storm</h2>
+
+      <form name="form" action="thanks.html" method="get">
+        <fieldset>
+          <legend>Personal Information</legend>
+          <div class="form-box">
+            <label for="name">Full Name* </label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              required="required"
+              pattern="[A-Za-z]{5+}"
+              autocomplete="name"
+            />
+          </div>
+
+          <div class="form-box">
+            <label for="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="email@example.com"
+            />
+          </div>
+
+          <div class="form-box">
+            <label for="phone">Phone*</label>
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+              required="required"
+              placeholder="Example 123-456-7890"
+            />
+          </div>
+
+          <div class="form-box">
+            <label for="number">Zipcode*</label>
+            <input type="number" id="number" name="zip" required="required" />
+          </div>
+        </fieldset>
+        <br /><br />
+        <fieldset>
+          <legend>Storm Information</legend>
+          <div class="form-box">
+            <label for="start">Storm Date:</label>
+            <input
+              type="date"
+              id="start"
+              name="date-of-storm"
+              value="2021-02-26"
+              min="2020-01-01"
+              max="2021-12-31"
+            />
+          </div>
+
+          <div class="form-box">
+            <label for="stormType">Storm Type:</label>
+            <input list="type" id="stormType" name="stormType" />
+            <datalist id="type">
+              <option value="Flash Flood"></option>
+              <option value="Hail"></option>
+              <option value="Hurricane"></option>
+              <option value="Thunderstorm"></option>
+              <option value="Tornado"></option>
+            </datalist>
+          </div>
+
+          <div class="rating">
+            <label for="rating"
+              >Storm Severity:&nbsp;&nbsp;&nbsp;
+              <br />
+              <input
+                type="range"
+                id="rating"
+                value="5"
+                min="1"
+                max="10"
+                step="1"
+                list="tickmarks"
+                oninput="adjustRating(this.value)"
+                onchange="adjustRating(this.value)"
+              />
+              <span id="ratingvalue">5</span>
+            </label>
+
+            <datalist id="tickmarks">
+              <option value="0"></option>
+              <option value="1"></option>
+              <option value="2"></option>
+              <option value="3"></option>
+              <option value="4"></option>
+              <option value="5"></option>
+              <option value="6"></option>
+              <option value="7"></option>
+              <option value="8"></option>
+              <option value="9"></option>
+              <option value="10"></option>
+            </datalist>
+          </div>
+          <br />
+          <div class="form-box">
+            <label for="selectregion">
+              <select name="region" id="selectregion" onchange="selectRegion()">
+                <option value="" disabled selected>Select Region ...</option>
+                <option value="Preston">Preston</option>
+                <option value="Soda Springs">Soda Springs</option>
+                <option value="Fish Haven">Fish Haven</option>
+              </select></label
+            >
+          </div>
+
+          <div>Are you in danger? <em>(Choose one)</em></div>
+          <div>
+            <input type="radio" id="yes" name="danger" value="yes" checked />
+            <label for="yes">Yes</label>
+          </div>
+          <div>
+            <input type="radio" id="maybe" name="danger" value="maybe" />
+            <label for="maybe">Maybe</label>
+          </div>
+          <div>
+            <input type="radio" id="no" name="danger" value="no" />
+            <label for="no">No</label>
+          </div>
+          <br />
+          <div class="form-box">
+            <label for="info">Additional information:</label>
+
+            <textarea
+              id="info"
+              name="info"
+              rows="5"
+              cols="33"
+              placeholder="Type here..."
+            ></textarea>
+          </div>
+        </fieldset>
+        <br />
+        <input id="submitBtn" type="submit" value="Report the Storm" />
+      </form>
+    </main>
+    <footer>
+      <img id="preston-map" src="images/map.jpg" alt="Footer Map" />
+      <section class="footersection">
+        <h3>&copy;Beautiful Idaho Sky</h3>
+        <h4>Contact us!</h4>
+        <ul id="preston-contact">
+          <li>888 N Preston Dr.</li>
+          <li>beautiful@idahosky.com</li>
+          <li>1-800-777-9999</li>
+        </ul>
+        <div class="social-media">
+          <a href="#"><img src="images/facebook.png" alt="Facebook Icon" /></a>
+          <a href="#"><img src="images/twitter.png" alt="Twitter Icon" /></a>
+          <a href="#"
+            ><img src="images/instagram.png" alt="Instagram Icon"
+          /></a>
+          <a href="#"><img src="images/snapchat.png" alt="Snapchat Icon" /></a>
+        </div>
+        <span id="currentdate"></span>
+        <div><span id="visits"></span> Idaho Sky visits</div>
+      </section>
+    </footer>
+
+    <script src="js/stormcenter.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+      WebFont.load({ google: { families: ["Dancing Script", "Fenix"] } });
+    </script>
+  </body>
+</html>

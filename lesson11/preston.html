@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Beautiful Idaho Sky</title>
+    <meta
+      name="description"
+      content="Stay updated with current weather conditions and news 
+    from Preston, Idaho, here at Beautiful Idaho Sky. We help build a tight knit community."
+    />
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="../css/normalize.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fenix&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/small.css" />
+    <link rel="stylesheet" href="css/medium.css" />
+    <link rel="stylesheet" href="css/large.css" />
+  </head>
+  <body>
+    <header>
+      <img src="images/logo.jpg" alt="Beautiful Idaho Sky Logo" />
+      <section class="headings">
+        <h1>Beautiful Idaho Sky</h1>
+        <div>Where we all love the sky!</div>
+      </section>
+    </header>
+    <nav>
+      <button onclick="toggleMenu()">&#9776; Menu</button>
+      <ul id="nav" class="hide">
+        <li><a href="https://erlacla.github.io/wdd230/lesson11/index">Home</a></li>
+        <li>
+            <a href="#" id="active">Preston</a
+            >
+          </li>
+          <li>
+            <a href="https://erlacla.github.io/wdd230/lesson11/sodasprings"
+              >Soda Springs</a
+            >
+          </li>
+          <li>
+            <a href="https://erlacla.github.io/wdd230/lesson11/fishhaven"
+              >Fish Haven</a
+            >
+          </li>
+          <li>
+            <a href="https://erlacla.github.io/wdd230/lesson8/stormcenter"
+              >Storm Center</a
+            >
+          </li>
+          <li>
+            <a href="https://erlacla.github.io/wdd230/lesson11/gallery"
+              >Gallery</a
+            >
+          </li>
+      </ul>
+    </nav>
+
+    <main>
+      <h2>Preston Idaho</h2>
+      <div class="position-weather-box">
+        <section id="pancake">
+          <h2>Don't Forget!</h2>
+          <p>
+            Come to the weekly community pancake breakfast! Tomorrow at 9am!
+            Don't miss it! Every Saturday in downtown Preston.
+          </p>
+        </section>
+        <img
+          id="idahoLake"
+          src="images/prestonHero1000.jpg"
+          sizes="100vw"
+          srcset="
+            images/prestonHero400.jpg   400w,
+            images/prestonHero700.jpg   700w,
+            images/prestonHero1000.jpg 1000w
+          "
+          alt="A grassy field in Preston, Idaho"
+        />
+
+        <section class="todaysWeather">
+          <h3>Today's weather:</h3>
+          <ul>
+            <li>Currently: <span id="current"></span></li>
+            <li>Temperature: <span id="temperature"></span>&#176;F</li>
+            <li>Wind: <span id="windspeed"></span> mph</li>
+            <li>Windchill: <span id="output"></span></li>
+            <li>Humidity: <span id="humidity"></span></li>
+          </ul>
+        </section>
+      </div>
+
+      <div id="fivedayforcast">
+        <h2>5 Day Forecast</h2>
+        <div class="grid">
+          <div class="grid-lines">
+            <span class="grid-top" id="day1"></span>
+            <img id="icon1" src="" alt="" />
+            <span id="forecast1"></span>
+          </div>
+          <div class="grid-lines">
+            <span class="grid-top" id="day2"></span>
+            <img id="icon2" src="" alt="" />
+            <span id="forecast2"></span>
+          </div>
+          <div class="grid-lines">
+            <span class="grid-top" id="day3"></span>
+            <img id="icon3" src="" alt="" />
+            <span id="forecast3"></span>
+          </div>
+          <div class="grid-lines">
+            <span class="grid-top" id="day4"></span>
+            <img id="icon4" src="" alt="" />
+            <span id="forecast4"></span>
+          </div>
+          <div class="grid-lines">
+            <span class="grid-top" id="day5"></span>
+            <img id="icon5" src="" alt="" />
+            <span id="forecast5"></span>
+          </div>
+        </div>
+      </div>
+      <section class="article">
+        <h2>A Great Place to Take the Family Sledding</h2>
+        <img
+          id="sled"
+          src="images/sleddingPic.jpg"
+          alt="Child with sled in snow"
+          loading="lazy"
+        />
+        <p>
+          Preston Mountain is one of the best places to let the kids zoom down
+          slick hills on sleds and inner tubes. It even has teeny moguls for
+          tots and lots of room for building snow men. You can purchase plastic
+          snow sleds and on weekends and major holidays there are concessions
+          that sell snacks, drinks and hot chocolate. Parking is convenient
+          within a short walking distance to play areas. If you like
+          snowshoeing, strap on the gear and get going. Preston Mountain is one
+          of the best places to let the kids zoom down slick hills on sleds and
+          inner tubes. It even has teeny moguls for tots and lots of room for
+          building snow men. You can purchase plastic snow sleds and on weekends
+          and major holidays there are concessions that sell snacks, drinks and
+          hot chocolate. Parking is convenient within a short walking distance
+          to play areas. If you like snowshoeing, strap on the gear and get
+          going.
+        </p>
+      </section>
+    </main>
+    <footer>
+      <div>
+        <h3>
+          Weather information provided by: <br /><a
+            href="https://openweathermap.org/"
+            >OpenWeatherMap</a
+          >
+        </h3>
+
+        <img id="preston-map" src="images/map.jpg" alt="Footer Map" />
+      </div>
+      <section class="footersection">
+        <h3>&copy;Beautiful Idaho Sky</h3>
+        <h4>Contact us!</h4>
+        <ul id="preston-contact">
+          <li>888 N Preston Dr.</li>
+          <li>beautiful@idahosky.com</li>
+          <li>1-800-777-9999</li>
+        </ul>
+        <div class="social-media">
+          <a href="#"><img src="images/facebook.png" alt="Facebook Icon" /></a>
+          <a href="#"><img src="images/twitter.png" alt="Twitter Icon" /></a>
+          <a href="#"
+            ><img src="images/instagram.png" alt="Instagram Icon"
+          /></a>
+          <a href="#"><img src="images/snapchat.png" alt="Snapchat Icon" /></a>
+        </div>
+
+        <span id="currentdate"></span>
+        <div><span id="visits"></span> Idaho Sky visits</div>
+      </section>
+    </footer>
+    <script src="js/preston-10.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+      WebFont.load({ google: { families: ["Dancing Script", "Fenix"] } });
+    </script>
+  </body>
+</html>

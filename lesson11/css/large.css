@@ -1,0 +1,28 @@
+@media only screen and (min-width: 60em) {
+    body {
+      max-width: 990px;
+    }
+    header {
+      font-size: 40px;
+    }
+    header img {
+      width: 100px;
+      height: auto;
+      padding: 0.5rem;
+    }
+    h1 {
+      font-size: 40px;
+    }
+    footer {
+      display: flex;
+    }
+    #preston-map {
+      padding: 30px;
+    }
+    footer div:first-child {
+      margin-right: auto;
+      margin-left: auto;
+    }
+
+  }
+  
