@@ -116,3 +116,25 @@ if ("IntersectionObserver" in window) {
     loadImages(img);
   });
 }
+
+const requestURL =
+  "https://byui-cit230.github.io/weather/data/towndata.json";
+fetch(requestURL)
+  .then(function (response) {
+    return response.json();
+  })
+  .then(function (jsonObject) {
+    const towns = jsonObject["towns"];
+ 
+let p = document.createElement("p");
+let p2 = document.createElement("p");
+let p3 = document.createElement("p");
+p.textContent = towns[6].events[0];
+p2.textContent = towns[6].events[1];
+p3.textContent = towns[6].events[2];
+document.querySelector("div.event-box").appendChild(p);
+document.querySelector("div.event-box").appendChild(p2);
+document.querySelector("div.event-box").appendChild(p3);
+
+  });
+

@@ -1,5 +1,5 @@
 const apiURL =
-  "https://api.openweathermap.org/data/2.5/weather?id=5604473&units=imperial&appid=193243ab32ebe2eba039565713596c16";
+  "https://api.openweathermap.org/data/2.5/weather?id=5607916&units=imperial&appid=193243ab32ebe2eba039565713596c16";
 fetch(apiURL)
   .then((response) => response.json())
   .then((jsObject) => {
@@ -33,7 +33,7 @@ fetch(apiURL)
   });
 
 const forecast =
-  "https://api.openweathermap.org/data/2.5/forecast?id=5604473&units=imperial&appid=193243ab32ebe2eba039565713596c16";
+  "https://api.openweathermap.org/data/2.5/forecast?id=5607916&units=imperial&appid=193243ab32ebe2eba039565713596c16";
 fetch(forecast)
   .then((response) => response.json())
   .then((fObject) => {
@@ -116,3 +116,24 @@ if ("IntersectionObserver" in window) {
     loadImages(img);
   });
 }
+
+const requestURL =
+  "https://byui-cit230.github.io/weather/data/towndata.json";
+fetch(requestURL)
+  .then(function (response) {
+    return response.json();
+  })
+  .then(function (jsonObject) {
+    const towns = jsonObject["towns"];
+ 
+let p = document.createElement("p");
+let p2 = document.createElement("p");
+let p3 = document.createElement("p");
+p.textContent = towns[0].events[0];
+p2.textContent = towns[0].events[1];
+p3.textContent = towns[0].events[2];
+document.querySelector("div.event-box").appendChild(p);
+document.querySelector("div.event-box").appendChild(p2);
+document.querySelector("div.event-box").appendChild(p3);
+
+  });
