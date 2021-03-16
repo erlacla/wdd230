@@ -52,6 +52,44 @@
     body {
       background-color: #a072d5;
     }
-    
+    .homeHero {
+      max-width: 800px;
+    }
+    .towns section {
+width: 752px;
+height: 342px;
+display: grid;
+grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+  .towns img {
+    position: static;
+    width: 200px;
+    margin-left: 0;
+  }
+  .towns section div {
+    grid-column-start: 1;
+  grid-column-end: 4;
+  justify-items: center;
+  align-items: center;
+  }
+  .towns section:nth-child(odd) div {
+    grid-column-start: 2;
+    grid-column-end: 5;
+  }
+  
+  .towns section:nth-child(odd) img {
+    grid-column: 1;
+    grid-row: 1;
+  }
+  .towns h2 {
+    margin-top: 80px;
+  }
+  .towns p, .towns h2 {
+  border: none;
+  background-color: #fffcf7;
+  }  
+  
+
+
   }
   

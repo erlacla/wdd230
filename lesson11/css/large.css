@@ -23,6 +23,53 @@
       margin-right: auto;
       margin-left: auto;
     }
+    .homeHero {
+      max-width: 1089px;
+      margin-left: -50px;
+    }
+    .overHero {
+      width: 600px;
+    position: absolute;
+    top: 40px;
+    left: 180px;
+    }
+    
+    .top {
+      position: relative;
+  }
+  .towns section {
+    border: 5px solid #5b3c80;
+    margin: 40px;
+    width: 350px;
+    height: 600px;
+    background-color: #fffcf7;
+    position: relative;
+    grid-template-columns: 1fr;
+  }
+  .towns section:last-child {
+    display: block;
+  }
+  .towns {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    width: 1200px;
+    margin-left: -130px;
+  }
+    
+    #preston-map {
+      padding: 30px;
+    }
+
+    .towns img {
+      width: 100%;
+      position: absolute;
+      left: 0px;
+      top: 0px;
+      z-index: 1;
+    }
+
+
+
 
   }
   
