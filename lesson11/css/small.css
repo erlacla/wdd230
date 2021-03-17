@@ -2,7 +2,7 @@ html {
     overflow-x: hidden;
   }
   header {
-    background-color: #caffd0;
+    background-color: #FAE8EB;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -62,7 +62,8 @@ html {
   }
   #active {
     background-color: rgba(0, 0, 0, 0.2);
-    color: #a072d5;
+    color: #CD9FCC;
+    text-decoration: underline;
   }
   nav a:hover,
   #active:hover,
@@ -232,7 +233,7 @@ html {
 
   #visits,
   footer div {
-    color: #a072d5;
+    color: #CD9FCC;
     margin-top: 20px;
   }
   #current {
@@ -274,14 +275,16 @@ margin-left: auto;
 
 .news {
 text-align: center;
-border: 10px dashed #caffd0;
+box-shadow: 0 5px 25px;
 max-width: 70%;
 margin-right: auto;
 margin-left: auto;
 margin-top: 30px;
-padding: 20px;
+padding: 10px;
 font-family: "Fenix", serif;
-box-shadow: 0 0 30px rgb(41, 41, 41);
+}
+.news p {
+  margin: 0;
 }
 
 .towns section {
