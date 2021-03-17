@@ -30,8 +30,8 @@
     .overHero {
       width: 600px;
     position: absolute;
-    top: 40px;
-    left: 180px;
+    top: 2em;
+    left: 12em;
     }
     
     .top {
@@ -67,8 +67,7 @@
       top: 0px;
       z-index: 1;
     }
-
-
+    
 
 
   }

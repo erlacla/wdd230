@@ -319,3 +319,85 @@ left: 0px;
 top: 0px;
 z-index: 1;
 }
+/* stormcenter page */
+form {
+  background-color: #fffcf7;
+  border: 3px solid #140a1f;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+  box-shadow: 0 0 30px rgb(41, 41, 41);
+  font-size: 20px;
+  font-family: "Fenix", serif;
+  margin-bottom: 45px;
+}
+input {
+  height: 40px;
+  caret-color: #a072d5;
+  border-radius: 5px;
+  padding-left: 10px;
+  margin-top: 5px;
+}
+.form-box {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  color: #140a14;
+}
+.rating {
+  max-width: 150px;
+  text-align: center;
+  border: 2px solid #a072d5;
+  padding: 10px;
+}
+input[type="radio"] {
+  height: auto;
+}
+legend {
+  font-size: 16px;
+  text-decoration: underline;
+  padding: 5px;
+  color: #140a1f;
+  font-family: "Fenix", serif;
+}
+fieldset {
+  display: block;
+  margin: auto;
+  background-color: #caffd0;
+  border-radius: 5px;
+}
+fieldset div {
+  max-width: 100%;
+  padding: 8px;
+}
+input[type="submit"] {
+  color: #140a1f;
+  font-family: "Fenix", serif;
+}
+#thanks {
+  text-align: center;
+  margin-bottom: 200px;
+}
+#submitBtn {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: #fffcf7;
+  font-family: "Fenix", serif;
+  color: #140a1f;
+}
+#submitBtn:hover,
+#submitBtn:focus {
+  background-color: #140a1f;
+  color: #fffcf7;
+}
+#selectregion {
+  padding: 10px;
+}
+textarea {
+  padding: 10px;
+  margin-top: 5px;
+  width: 95%;
+}

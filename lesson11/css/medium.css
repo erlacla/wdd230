@@ -1,6 +1,6 @@
 @media only screen and (min-width: 40em) {
     body {
-      max-width: 800px;
+      max-width: 100%;
     }
     nav button {
       display: none;
@@ -53,7 +53,7 @@
       background-color: #a072d5;
     }
     .homeHero {
-      max-width: 800px;
+      max-width: 100%;
     }
     .towns section {
 width: 752px;
@@ -88,7 +88,9 @@ grid-template-columns: 1fr 1fr 1fr 1fr;
   border: none;
   background-color: #fffcf7;
   }  
-  
+  fieldset {
+    max-width: 500px;
+  }
 
 
   }
