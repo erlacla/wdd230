@@ -368,7 +368,7 @@ legend {
 fieldset {
   display: block;
   margin: auto;
-  background-color: #caffd0;
+  background-color: #FAE8EB;
   border-radius: 5px;
 }
 fieldset div {
@@ -403,4 +403,14 @@ textarea {
   padding: 10px;
   margin-top: 5px;
   width: 95%;
+}
+.gallery {
+  display: grid;
+  border: 4px solid #140a1f;
+  justify-items: center;
+  font-family: "Fenix", serif;
+}
+.gallery img {
+  max-width: 100%;
+  height: auto;
 }

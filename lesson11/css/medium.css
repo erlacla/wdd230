@@ -91,6 +91,15 @@ grid-template-columns: 1fr 1fr 1fr 1fr;
   fieldset {
     max-width: 500px;
   }
+  .gallery {
+    width: 793px;
+    grid-template-columns: 400px 400px;
+    justify-items: center;
+  }
+
+
+
+
 
 
   }

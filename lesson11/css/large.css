@@ -25,7 +25,7 @@
     }
     .homeHero {
       max-width: 1089px;
-      margin-left: -50px;
+      margin-left: -3rem;
     }
     .overHero {
       width: 600px;
@@ -67,7 +67,21 @@
       top: 0px;
       z-index: 1;
     }
-    
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+      width: 1100px;
+      background-color: #fffcf7;
+      margin-left: -60px;
+    }
+    .gallery figure:hover,
+    .gallery figure:focus {
+      cursor: pointer;
+      opacity: 0.6;
+      border-radius: 2%;
+      box-shadow: 10px 10px 50px rgb(26, 25, 25);
+      padding: 10px;
+    }
 
 
   }
