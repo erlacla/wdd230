@@ -37,6 +37,7 @@ const forecast =
 fetch(forecast)
   .then((response) => response.json())
   .then((fObject) => {
+    console.log(fObject);
     const forecast5 = fObject.list.filter((x) => x.dt_txt.includes("18:00:00"));
     let day = 0;
     const dayOfWeek = ["SUN", "MON", "TUE", "WED", "THR", "FRI", "SAT"];

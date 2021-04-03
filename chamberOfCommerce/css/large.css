@@ -1,0 +1,54 @@
+@media only screen and (min-width: 992px) {
+  header {
+    display: flex;
+  }
+  nav button {
+    display: none;
+  }
+  nav {
+    margin: 0;
+    padding-top: 40px;
+    width: 860px;
+  }
+  #nav {
+    display: flex;
+  }
+  nav ul li {
+    flex: 100%;
+    text-align: center;
+  }
+  nav ul li a {
+    display: block;
+    padding: 0.8rem 2%;
+  }
+  /* nav ul.hide {
+    display: block;
+  } */
+
+  #search {
+    display: block;
+    height: 22px;
+    width: 25px;
+    margin-left: auto;
+    padding: 57px;
+  }
+
+.footersection {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+  
+}
+
+.largeflex {
+  display: flex;
+}
+
+.container {
+  margin-bottom: 30px;
+}
+
+
+
+}
