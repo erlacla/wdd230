@@ -1,0 +1,60 @@
+{
+    "directory": [
+        {
+            "name": "Staples",
+            "telephone": "480 641-5302",
+            "address": "4535 E McKellips Rd Mesa AZ 85215",
+            "website": "http://www.staples.com/",
+            "imageurl": "https://assets.staples-static.com/sbd/cre/products/190317/dg19214/images/staples_logo_transparent.svg"
+        },
+        {
+            "name": "HUE97",
+            "telephone": "(480) 809-6800",
+            "address": "9736 East Balsam Ave Mesa AZ 85208",
+            "website": "http://www.hue97.com/",
+            "imageurl": "https://capi.myleasestar.com/v2/dimg/70640563/400x400/70640563.png"
+        },
+        {
+            "name": "Pomeroy's Men's Stores",
+            "telephone": "(480) 833-0733",
+            "address": "136 W Main St Mesa AZ 85201",
+            "website": "http://www.pomeroysclothing.com/",
+            "imageurl": "https://cdn.shopify.com/s/files/1/2305/3559/files/Pom-Logo-011516_360x.jpg?v=1517024794"
+        },
+        {
+            "name": "Arizona Golf Resort",
+            "telephone": "(480) 832-3202",
+            "address": "425 S Power Rd #333 Mesa AZ 85206",
+            "website": "http://www.arizonagolfresort.com/",
+            "imageurl": "https://www.arizonagolfresort.com/images/design/logo.png"
+        },
+        {
+            "name": "Original Blue Adobe Grill",
+            "telephone": "(480) 962-1000",
+            "address": "144 N Country Club Dr Mesa AZ 85201",
+            "website": "http://www.originalblueadobe.com/",
+            "imageurl": "https://static.spotapps.co/web/originalblueadobe--com/custom/logo.png"
+        },
+        {
+            "name": "The Duttons",
+            "telephone": "(480) 840-6874",
+            "address": "7420 E Main St Mesa AZ 85207",
+            "website": "http://www.theduttons.com/",
+            "imageurl": "https://www.theduttons.com/wp-content/uploads/2019/02/dutton-logo-branson.png"
+        },
+        {
+            "name": "Twisted Pies Pizzeria",
+            "telephone": "(480) 699-8022",
+            "address": "3929 E Main St 16 Mesa AZ 85205",
+            "website": "http://www.twistedpies.com/",
+            "imageurl": "https://menufyproduction.imgix.net/637206843844315605+159986.png?auto=compress,format&h=1080&w=1920&fit=max"
+        },
+        {
+            "name": "Organ Stop Pizza",
+            "telephone": "(480) 813-5700",
+            "address": "1149 E Southern Ave Mesa AZ 85204",
+            "website": "http://www.organstoppizza.com/",
+            "imageurl": "https://organstoppizza.com/wp-content/uploads/2011/06/DSC_5445-organ637x425.png"
+        }
+    ]
+}
