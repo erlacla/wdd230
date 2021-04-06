@@ -48,7 +48,25 @@
 .container {
   margin-bottom: 30px;
 }
+.mesaArticlesAndEvents {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
 
+.mesaArticlesAndEvents img {
+float: right;
+
+}
+
+div.cards {
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.sideBySide {
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  direction: rtl; 
+}
 
 
 }
