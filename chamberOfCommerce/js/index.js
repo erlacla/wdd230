@@ -12,7 +12,7 @@ fetch(forecast)
   .then((fObject) => {
     console.log(fObject);
     const daily = fObject.daily;
-    
+
     const threeDayF = daily.filter((x) => x.id < 1);
     console.log(daily);
 
@@ -50,13 +50,12 @@ let modified = document.lastModified;
 document.querySelector("#modified").innerHTML = modified;
 
 fetch("json/directory.json")
-  .then(response => response.json ()) 
+  .then((response) => response.json())
   .then((directory) => {
     let i = 0;
     const d = directory.directory;
-console.log(d);
-d.forEach(() => {
-
+    console.log(d);
+    d.forEach(() => {
       let card = document.createElement("section");
       let h2 = document.createElement("h2");
       let p = document.createElement("p");
@@ -70,14 +69,24 @@ d.forEach(() => {
       p3.textContent = d[i].website;
       image.setAttribute("src", d[i].imageurl);
       image.setAttribute("alt", `${d[i].name} logo`);
-
+      
       card.appendChild(h2);
+      card.appendChild(image);
       card.appendChild(p);
       card.appendChild(p2);
       card.appendChild(p3);
-      card.appendChild(image);
-i++;
-     document.querySelector("div.cards").appendChild(card); 
+      
+      i++;
+      document.querySelector("div.grid").appendChild(card);
     });
-    
   });
+
+function gridView() {
+  document.querySelector("div.list").classList.remove("list");
+  document.getElementById("view").classList.add("grid");
+}
+
+function listView() {
+  document.querySelector("div.grid").classList.remove("grid");
+  document.getElementById("view").classList.add("list");
+}

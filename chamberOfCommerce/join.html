@@ -57,9 +57,17 @@
       <img id="search" src="images/search.png" alt="Search icon" />
     </header>
     <main>
-        <div class="joinBox">
-          <img id="cactus" src="images/cactus300.jpg" alt="Mesa Cactus">
+        
+          
       <h1>Join Our Commerce Today!</h1>
+      <div class="sideBySide">
+
+        <picture>
+          <source srcset="images/cactus300.jpg"
+                  media="(min-width: 992px)">
+          <img src="images/cactusWide.jpg" alt="Mesa Cactus" />
+      </picture>
+
 <h2>Gain access to:</h2>
       <ul class="joinLi">
           <li>City Advocacy</li>
@@ -71,9 +79,9 @@
       </ul>
       <form name="form" action="thanks.html" method="get">
         <fieldset>
-          <legend>Information</legend>
+          
           <div class="form-box">
-            <label for="name">First Name* </label>
+            <label for="name"></label>
             <input
               type="text"
               name="name"
@@ -81,11 +89,12 @@
               required="required"
               pattern="[A-Za-z]{5+}"
               autocomplete="name"
+              placeholder="First Name*"
             />
           </div>
 
           <div class="form-box">
-            <label for="name">Last Name* </label>
+            <label for="name"></label>
             <input
               type="text"
               name="name"
@@ -93,11 +102,12 @@
               required="required"
               pattern="[A-Za-z]{5+}"
               autocomplete="name"
+              placeholder="Last Name*"
             />
           </div>
 
           <div class="form-box">
-            <label for="name">Title </label>
+            <label for="name"></label>
             <input
               type="text"
               name="name"
@@ -105,11 +115,12 @@
               required="required"
               pattern="[A-Za-z]{5+}"
               autocomplete="name"
+              placeholder="Title"
             />
           </div>
 
           <div class="form-box">
-            <label for="email">Email*</label>
+            <label for="email"></label>
             <input
               type="email"
               id="email"
@@ -120,22 +131,21 @@
           </div>
 
           <div class="form-box">
-            <label for="phone">Cell Phone*</label>
+            <label for="phone"></label>
             <input
               type="tel"
               id="phone"
               name="phone"
               pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
-              placeholder="Example 123-456-7890"
+              placeholder="Phone*"
             />
           </div>
 </fieldset>
 <br /><br />
         <fieldset>
-          <legend>Business Information</legend>
 
           <div class="form-box">
-            <label for="name">Business Name* </label>
+            <label for="name"></label>
             <input
               type="text"
               name="name"
@@ -143,64 +153,68 @@
               required="required"
               pattern="[A-Za-z]{5+}"
               autocomplete="name"
+              placeholder="Business Name*"
             />
           </div>
 
           <div class="form-box">
-            <label for="address">Address </label>
+            <label for="address"></label>
              <input 
              type="text" 
             name="address"
              id="adr"  
-             placeholder="123 W. Example St."
+             placeholder="Street Address"
              />
             </div>
 
             <div class="form-box">
-                <label for="address">Address </label>
+                <label for="address"></label>
             <input 
             type="text" 
             id="city" 
             name="city" 
-            placeholder="Mesa"
+            placeholder="City"
             />
         </div>
 
         <div class="form-box">
-            <label for="address">Address </label>
+            <label for="address"></label>
         <input 
         type="text" 
         id="state" 
         name="state" 
-        placeholder="AZ">
+        placeholder="State"
+        />
+      </div>
 
           <div class="form-box">
-            <label for="number">Zipcode</label>
+            <label for="number"></label>
             <input type="number" 
             id="number" 
             name="zip"
-             />
+            placeholder="Zipcode"
+            />
           </div>
         
           <div class="form-box">
-            <label for="address">Business Website</label>
+            <label for="address"></label>
              <input 
              type="text" 
             name="website"
              id="website"  
-             placeholder="biz.com"
+             placeholder="Business Website"
              pattern="http\://[a-zA-Z0-9-\.]+\.[a-zA-Z]{2,3}(/\S*)?$"
              />
             </div>
 
             <div class="form-box">
-                <label for="info">Business Description:</label>
+                <label for="info"></label>
                 <textarea
                   id="info"
                   name="info"
                   rows="2"
                   cols="20"
-                  placeholder="Type here..."
+                  placeholder="Business Description:"
                 ></textarea>
               </div>
 
@@ -218,6 +232,7 @@
         <br />
         <input class="submitBtn" type="submit" value="Join Commerce" />
       </form>
+</div>
 </div>
 <div id="key">
   <h3>Membership Levels include</h3>

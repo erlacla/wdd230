@@ -26,9 +26,7 @@
   </head>
   <body>
     <header>
-      <a href="index.html"
-        ><img src="images/logo400.jpg" alt="Chamber of Commerce Logo"
-      /></a>
+      <a href="index.html"><img src="images/logo400.jpg" alt="Chamber of Commerce Logo"/></a>
 
       <nav>
         <button onclick="toggleMenu()">&#9776;</button>
@@ -58,7 +56,14 @@
     </header>
     <main>
       <h1>Directory</h1>
-      <div class="cards"></div>
+
+      <div id="container">
+        <div class="icons">
+            <a onclick="gridView()"><img src="images/grid.png" alt="Grid Icon"/></a>
+            <a onclick="listView()"><img src="images/list.png" alt="List Icon"/></a>
+        </div>
+
+      <div id="view" class="grid"></div>
 
 
   </main>
@@ -82,6 +87,9 @@
           <br>
           <br>
           <a href="tel:4802901884">(480) 290-1884</a>
+          <br>
+          <br>
+          <a target="_blank" href="undefined/icons/set/list">List icon</a> icon by <a target="_blank" href="">Icons8</a>
         </p>
         <input class="submitBtn" type="submit" value="Join our Chamber now!" />
        
@@ -90,6 +98,7 @@
         
       </section>
       <h3>&copy;2021 Mesa Chamber of Commerce</h3>
+     
       <div class="lmodified">Last modified on <span id="modified"></span></div>
     </footer>
 

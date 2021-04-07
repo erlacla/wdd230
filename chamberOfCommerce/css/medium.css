@@ -10,9 +10,21 @@
     
 }
 
-div.cards {
+.grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
+
+.list {
+    display: block;
+    max-hight: 200px;
+}
+.icons img {
+    margin: 20px;
+}
+
+.icons {
+    display: block;
+  }
 
 }
