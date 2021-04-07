@@ -44,11 +44,15 @@
             >
           </li>
           <li>
-            <a href="https://erlacla.github.io/wdd230/chamberOfCommerce/directory"
-            >Directory</a>
+            <a
+              href="https://erlacla.github.io/wdd230/chamberOfCommerce/directory"
+              >Directory</a
+            >
           </li>
           <li>
-            <a href="https://erlacla.github.io/wdd230/chamberOfCommerce/contact" id="active"
+            <a
+              href="https://erlacla.github.io/wdd230/chamberOfCommerce/contact"
+              id="active"
               >Contact</a
             >
           </li>
@@ -58,112 +62,127 @@
       <img id="search" src="images/search.png" alt="Search icon" />
     </header>
     <main>
-        <h1>Get in Touch</h1>
-       <div class="sideBySide">
-        
-        <picture>
-            <source srcset="images/contact300.jpg"
-                    media="(min-width: 992px)">
+      <h1>Get in Touch</h1>
+      <div class="sideBySide">
+        <section class="contactInfo">
+          <picture>
+            <source srcset="images/contact300.jpg" media="(min-width: 992px)" />
             <img src="images/contact768.jpg" alt="Clasping wrists" />
-        </picture>
-<p>Have a question about our Chamber of Commerce? Need information about Mesa, AZ? Fill out the contact form
-and a member of our staff will respond promptly.</p>
-<h3>Board of Directors</h3>
-<ul>
-  <li>Nancy Walker - Chair</li>
-  <li>Jim Daniels - Executive Committee Head</li>
-  <li>Shannon Giles - Executive Committee VP</li>
-  <li>Harry Kennon - Chamber Board Chair</li>
-  <li>Philip Goshen - Chamber Board Co-Chair</li>
-</ul>
+          </picture>
+          <h2>Contact Info</h2>
+          <p>
+            3952 South Mesa Cir. Unit 103
+            <br />
+            Mesa, AZ 85203-0527
+            <br />
+            <br />
+            <a href="tel:4802901884">(480) 290-1884</a>
+          </p>
+        </section>
 
-        <>3952 South Mesa Cir. Unit 103
-          <br>
-          Mesa, AZ 85203-0527
-          <br>
-          <br>
-          <a href="tel:4802901884">(480) 290-1884</a>
-        </>
+        <section>
+          <h2>
+            Have a question about our Chamber of Commerce? Need information
+            about Mesa, AZ? Fill out the contact form and a member of our staff
+            will respond promptly.
+          </h2>
+          <h3>Board of Directors</h3>
+          <ul>
+            <li>Nancy Walker - Chair</li>
+            <li>Jim Daniels - Executive Committee Head</li>
+            <li>Shannon Giles - Executive Committee VP</li>
+            <li>Harry Kennon - Chamber Board Chair</li>
+            <li>Philip Goshen - Chamber Board Co-Chair</li>
+          </ul>
 
+          <form name="form" action="thanks.html" method="get">
+            <h2>Contact Form</h2>
+            <fieldset>
+              <div class="form-box">
+                <label for="name"></label>
+                <input
+                  type="text"
+                  name="name"
+                  id="name"
+                  required="required"
+                  pattern="[A-Za-z]{5+}"
+                  autocomplete="name"
+                  placeholder="Name*"
+                />
+              </div>
+              <div class="form-box">
+                <label for="email"></label>
+                <input
+                  type="email"
+                  id="email"
+                  required="required"
+                  name="email"
+                  placeholder="Email*"
+                />
+              </div>
 
-      <form name="form" action="thanks.html" method="get">
-        <h2>Contact Form</h2>
-        <fieldset>
-      <div class="form-box">
-        <label for="name"></label>
-        <input
-          type="text"
-          name="name"
-          id="name"
-          required="required"
-          pattern="[A-Za-z]{5+}"
-          autocomplete="name"
-          placeholder="Name*"
-        />
+              <div class="form-box">
+                <label for="phone"></label>
+                <input
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                  placeholder="Phone*"
+                />
+              </div>
+              <div class="form-box">
+                <label for="info"></label>
+                <textarea
+                  id="info"
+                  name="info"
+                  rows="2"
+                  cols="20"
+                  placeholder="Please type your question or message here"
+                ></textarea>
+              </div>
+            </fieldset>
+            <br />
+            <input class="submitBtn" type="submit" value="Submit" />
+          </form>
+        </section>
       </div>
-      <div class="form-box">
-        <label for="email"></label>
-        <input
-          type="email"
-          id="email"
-          required="required"
-          name="email"
-          placeholder="Email*"
-        />
-      </div>
+    </main>
 
-      <div class="form-box">
-        <label for="phone"></label>
-        <input
-          type="tel"
-          id="phone"
-          name="phone"
-          pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
-          placeholder="Phone*"
-        />
-      </div>
-      <div class="form-box">
-        <label for="info"></label>
-        <textarea
-          id="info"
-          name="info"
-          rows="2"
-          cols="20"
-          placeholder="Please type your question or message here"
-        ></textarea>
-      </div>
-    </fieldset>
-    <br />
-    <input class="submitBtn" type="submit" value="Submit" />
-  </form>
-</div>
-  </main>
-
-    <footer> 
+    <footer>
       <div class="social-media">
-          <a href="https://www.facebook.com"><img src="images/facebook.png" alt="Facebook Icon" /></a>
-          <a href="https://www.youtube.com"><img src="images/youtube.png" alt="Youtube Icon" /></a>
-          <a href="https://twitter.com"><img src="images/twitter.png" alt="Twitter Icon" /></a>
-          <a href="https://www.instagram.com"
-            ><img src="images/instagram.png" alt="Instagram Icon"
-          /></a>
-          <a href="https://www.linkedin.com/"><img src="images/linkedin.png" alt="Linkedin Icon" /></a>
-        </div>
-      
+        <a href="https://www.facebook.com"
+          ><img src="images/facebook.png" alt="Facebook Icon"
+        /></a>
+        <a href="https://www.youtube.com"
+          ><img src="images/youtube.png" alt="Youtube Icon"
+        /></a>
+        <a href="https://twitter.com"
+          ><img src="images/twitter.png" alt="Twitter Icon"
+        /></a>
+        <a href="https://www.instagram.com"
+          ><img src="images/instagram.png" alt="Instagram Icon"
+        /></a>
+        <a href="https://www.linkedin.com/"
+          ><img src="images/linkedin.png" alt="Linkedin Icon"
+        /></a>
+      </div>
+
       <section class="footersection">
-        <img id="footlogo" src="images/footlogo150.jpg" alt="Mesa Chamber of Commerce logo" />
-        <p>3952 South Mesa Cir. Unit 103
-          <br>
+        <img
+          id="footlogo"
+          src="images/footlogo150.jpg"
+          alt="Mesa Chamber of Commerce logo"
+        />
+        <p>
+          3952 South Mesa Cir. Unit 103
+          <br />
           Mesa, AZ 85203-0527
-          <br>
-          <br>
+          <br />
+          <br />
           <a href="tel:4802901884">(480) 290-1884</a>
         </p>
         <input class="submitBtn" type="submit" value="Join our Chamber now!" />
-       
-        
-        
-        
       </section>
       <h3>&copy;2021 Mesa Chamber of Commerce</h3>
       <div class="lmodified">Last modified on <span id="modified"></span></div>

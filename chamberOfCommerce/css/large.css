@@ -41,6 +41,10 @@
   
 }
 
+.homegrid {
+  grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+}
+
 .largeflex {
   display: flex;
 }

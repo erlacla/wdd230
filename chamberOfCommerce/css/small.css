@@ -11,13 +11,12 @@ html {
 h1,
 h2 {
   font-family: "Montserrat", sans-serif;
-  padding: 3%;
-  margin: 3%;
-  font-size: 25px;
+  padding: 10px;
+  margin: 10px;
 }
 p, footer{
   font-family: "Open Sans", sans-serif;
-  padding: 3%;
+  padding: 10px;
 }
 h1 {
   font-size: 50px;
@@ -82,9 +81,8 @@ nav ul li a {
 nav a:hover,
 #active:hover,
 button:hover,
-footer a:hover, 
-.icons a:hover,
-a:hover {
+.social-media a:hover, 
+.icons a:hover {
   background-color: #ffe66d;
   color: #fff;
   border-radius: 100%;
@@ -103,14 +101,16 @@ nav ul.hide {
 }
 .homegrid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
-  max-width: 380px;
+  grid-template-columns: 1fr 1fr;
+  width: 70%;
   margin: 0 auto;
   margin-top: 30px;
+  margin-bottom: 30px;
   text-align: center;
 }
+
 .grid-top {
-  display: block;
+  display: grid;
   text-align: center;
   color: #e2dfdf;
   background-color: #192f5d;
@@ -119,15 +119,20 @@ nav ul.hide {
   font-size: 25px;
 }
 .grid-lines {
+  display: grid;
   letter-spacing: 3px;
+  padding: 3px;
   font-family: "Open Sans", sans-serif;
-  padding-bottom: 25px;
   text-transform: capitalize;
+  border: 2px solid #000000;
+  margin: 3px;
 }
 .grid-lines img {
-  width: 100%;
+  width: 30%;
   filter: brightness(2);
   background: #00bfff;
+  margin-left: auto;
+  margin-right: auto;
 }
 .container {
   display: block;
@@ -222,6 +227,19 @@ main {
   box-shadow: 0 1px 8px rgb(51 51 51 / 10%);
 }
 
+.main-top h1 {
+  margin-bottom: 40px;
+}
+
+.main-top input {
+  width: 40%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+ margin-bottom: 60px;
+}
+
+
 .social-media {
   display: flex;
   align-items: center;
@@ -278,19 +296,29 @@ footer h3 {
     width: 100%;
   }
 
+.contactInfo p, .contactInfo a {
+  color: #fff;
+}
+
   .joinBox {
     background-color: #E2DFDF;
     max-width: 800px;
   }
 
+  section h3 {
+    color: #fff;
+    font-family: "Open Sans", sans-serif;
+    padding: 20px;
+    padding-bottom: 0;
+  }
   .sideBySide {
     background-color: #9B2915;
     
   }
-.sideBySide h2, #key h2 {
+.sideBySide h2, #key h2. {
   color: #fff;
-  margin: 0 auto 0 auto;
-  
+  margin: 20px;
+  text-align: center;
 }
 
   form {
