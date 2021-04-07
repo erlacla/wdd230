@@ -54,7 +54,7 @@ fetch("json/directory.json")
   .then((directory) => {
     let i = 0;
     const d = directory.directory;
-    console.log(d);
+    
     d.forEach(() => {
       let card = document.createElement("section");
       let h2 = document.createElement("h2");
