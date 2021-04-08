@@ -3,7 +3,7 @@ fetch("json/directory.json")
   .then((directory) => {
     let i = 0;
     const d = directory.directory;
-    
+
     d.forEach(() => {
       let card = document.createElement("section");
       let h2 = document.createElement("h2");
@@ -18,13 +18,13 @@ fetch("json/directory.json")
       p3.textContent = d[i].website;
       image.setAttribute("src", d[i].imageurl);
       image.setAttribute("alt", `${d[i].name} logo`);
-      
+
       card.appendChild(h2);
       card.appendChild(image);
       card.appendChild(p);
       card.appendChild(p2);
       card.appendChild(p3);
-      
+
       i++;
       document.getElementById("view").appendChild(card);
     });

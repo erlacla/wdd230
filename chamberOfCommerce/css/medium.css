@@ -1,35 +1,35 @@
 @media only screen and (min-width: 768px) {
-
-.social-media {
+  h1 {
+    font-size: 50px;
+  }
+  .social-media {
     max-width: 500px;
-}
-.container {
+  }
+  .container {
     display: grid;
     grid-template-columns: 1fr 1fr;
     width: 800px;
-}
+  }
 
-.grid {
+  .grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-}
+  }
 
-.list {
+  .list {
     display: block;
-}
-.icons img {
+  }
+  .icons img {
     margin: 20px;
-}
+  }
 
-.icons {
+  .icons {
     display: block;
   }
   #flexImg {
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-      width: 500px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 500px;
   }
-
-
 }
