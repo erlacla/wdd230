@@ -291,82 +291,69 @@ footer h3 {
 
   .under1 {
     position: relative;
-    width: 900px;
-    height: 400px;
     margin-bottom: 20px;
   }
-
+.under1 img {
+  width: 100%;
+}
   .over1 {
-    position: absolute;
-    top: 0;
-    left: 0;
     background-color:rgb(155, 41, 21, 0.808);
     color: #fff;
-    width: 350px;
-    height: 400px;
   }
 
   .under2 {
-    position: relative;
-    width: 900px;
-    height: 400px;
     margin-bottom: 20px;
     display: block;
     margin-left: auto;
   }
-
+  .under2 img {
+    width: 100%;
+  }
   .over2 {
-    position: absolute;
-    top: 0;
-    right: 0;
     background-color:rgb(155, 41, 21, 0.808);
     color: #fff;
-    width: 350px;
-    height: 400px;
   }
 
   .under3 {
-    position: relative;
-    width: 900px;
-    height: 400px;
     margin-bottom: 20px;
     display: block;
     margin-right: auto;
   }
-
+  .under3 img {
+    width: 100%;
+  }
   .over3 {
-    position: absolute;
-    top: 20%;
-    left: 0;
     background-color:rgb(155, 41, 21, 0.808);
     color: #fff;
-    width: 898px;
-    height: 250px;
   }
 
   .under4 {
-    position: relative;
-    width: 900px;
-    height: 400px;
     margin-bottom: 20px;
     display: block;
     margin-left: auto;
   }
-
+  .under4 img {
+    width: 100%;
+  }
   .over4 {
-    position: absolute;
-    top: 0;
-    right: 0;
     background-color:rgb(155, 41, 21, 0.808);
     color: #fff;
-    width: 350px;
-    height: 400px;
+  }
+
+  form input:required {
+    border-left: 8px solid #ffe66d;
   }
 
 
-  #flexImg {
-    display: flex;
-    width: 900px;
+  form input:required:valid{
+    border-left: 8px solid #192f5d;
+  }
+
+  #joinSec {
+    margin: 0 auto;
+  border: 10px solid #ffe66d;
+  width: 60%;
+  margin-top: 20px;
   }
 
 .contactInfo p, .contactInfo a {

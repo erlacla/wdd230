@@ -85,7 +85,8 @@
       </ul>
     </div>
   </section>
-<section>
+<section >
+  <div id="joinSec">
 <h2>Gain access to:</h2>
       <ul>
           <li>City Advocacy</li>
@@ -94,17 +95,17 @@
           <li>Ribbon-cutting Ceremonies</li>
           <li>Local Discounts</li>
           <li>And So Much More...</li>
-      </ul>
+      </ul></div>
       <form name="form" action="thanks.html" method="get">
        <h2>Membership Form</h2>
         <fieldset>
           
           <div class="form-box">
-            <label for="name"></label>
+            <label for="fname"></label>
             <input
               type="text"
-              name="name"
-              id="name"
+              name="fname"
+              id="fname"
               required="required"
               pattern="[A-Za-z]{5+}"
               autocomplete="name"
@@ -113,11 +114,11 @@
           </div>
 
           <div class="form-box">
-            <label for="name"></label>
+            <label for="lname"></label>
             <input
               type="text"
-              name="name"
-              id="name"
+              name="lname"
+              id="lname"
               required="required"
               pattern="[A-Za-z]{5+}"
               autocomplete="name"
@@ -126,11 +127,11 @@
           </div>
 
           <div class="form-box">
-            <label for="name"></label>
+            <label for="tname"></label>
             <input
               type="text"
-              name="name"
-              id="name"
+              name="tname"
+              id="tname"
               required="required"
               pattern="[A-Za-z]{5+}"
               autocomplete="name"
@@ -181,13 +182,13 @@
              <input 
              type="text" 
             name="address"
-             id="adr"  
+             id="address"  
              placeholder="Street Address"
              />
             </div>
 
             <div class="form-box">
-                <label for="address"></label>
+                <label for="city"></label>
             <input 
             type="text" 
             id="city" 
@@ -197,7 +198,7 @@
         </div>
 
         <div class="form-box">
-            <label for="address"></label>
+            <label for="state"></label>
         <input 
         type="text" 
         id="state" 
@@ -207,16 +208,16 @@
       </div>
 
           <div class="form-box">
-            <label for="number"></label>
+            <label for="zip"></label>
             <input type="number" 
-            id="number" 
+            id="zip" 
             name="zip"
             placeholder="Zipcode"
             />
           </div>
         
           <div class="form-box">
-            <label for="address"></label>
+            <label for="website"></label>
              <input 
              type="text" 
             name="website"
@@ -231,15 +232,15 @@
                 <textarea
                   id="info"
                   name="info"
-                  rows="2"
+                  rows="3"
                   cols="20"
                   placeholder="Business Description:"
                 ></textarea>
               </div>
 
           <div class="form-box">
-            <label for="stormType">Membership Level Selection:</label>
-            <input list="type" id="stormType" name="stormType" />
+            <label for="levelType">Membership Level Selection:</label>
+            <input list="type" id="levelType" name="levelType" />
             <datalist id="type">
               <option value="Non-profit($100)"></option>
               <option value="Bronze($200)"></option>
@@ -267,7 +268,7 @@
           <a href="https://www.linkedin.com/"><img src="images/linkedin.png" alt="Linkedin Icon" /></a>
         </div>
       
-      <section class="footersection">
+      <div class="footersection">
         <img id="footlogo" src="images/footlogo150.jpg" alt="Mesa Chamber of Commerce logo" />
         <p>3952 South Mesa Cir. Unit 103
           <br>
@@ -281,7 +282,7 @@
         
         
         
-      </section>
+      </div>
       <h3>&copy;2021 Mesa Chamber of Commerce</h3>
       <div class="lmodified">Last modified on <span id="modified"></span></div>
     </footer>
