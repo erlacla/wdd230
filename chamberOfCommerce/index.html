@@ -1,73 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mesa Chamber of Commerce</title>
-    <meta
-      name="description"
-      content="Join Mesa Chamber of Commerce! We promote strong communities, 
-      support local businesses, and keep you informed"
-    />
-    <link rel="shortcut icon" href="../mesaicon.ico" type="image/x-icon" />
-    <link rel="stylesheet" href="../css/normalize.css" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="css/small.css" />
-    <link rel="stylesheet" href="css/medium.css" />
-    <link rel="stylesheet" href="css/large.css" />
-  </head>
-  <body>
-    <header>
-      <div onload="alert()"><span id="alert"></span></div>
-      <a href="index.html"
-        ><img src="images/logo400.jpg" alt="Chamber of Commerce Logo"
-      /></a>
 
-      <nav>
-        <button onclick="toggleMenu()">&#9776;</button>
-        <ul id="nav" class="hide">
-          <li>
-            <a href="https://erlacla.github.io/wdd230/chamberOfCommerce/mesa"
-              >Mesa</a
-            >
-          </li>
-          <li>
-            <a href="https://erlacla.github.io/wdd230/chamberOfCommerce/join"
-              >Join</a
-            >
-          </li>
-          <li>
-            <a
-              href="https://erlacla.github.io/wdd230/chamberOfCommerce/directory"
-              >Directory</a
-            >
-          </li>
-          <li>
-            <a href="https://erlacla.github.io/wdd230/chamberOfCommerce/contact"
-              >Contact</a
-            >
-          </li>
-        </ul>
-      </nav>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mesa Chamber of Commerce</title>
+  <meta name="description" content="Join Mesa Chamber of Commerce! We promote strong communities, 
+      support local businesses, and keep you informed" />
+  <link rel="shortcut icon" href="../mesaicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="../css/normalize.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/small.css" />
+  <link rel="stylesheet" href="css/medium.css" />
+  <link rel="stylesheet" href="css/large.css" />
+</head>
 
-      <img id="search" src="images/search.png" alt="Search icon" />
-    </header>
-    <main>
-      <div class="lgView">
-        <div class="main-top">
-          <h1>Welcome to the Mesa Chamber of Commerce</h1>
+<body>
+  <header>
+    <div onload="alert()"><span id="alert"></span></div>
+    <a href="index.html"><img src="images/logo400.jpg" alt="Chamber of Commerce Logo" /></a>
 
+    <nav>
+      <button onclick="toggleMenu()">&#9776;</button>
+      <ul id="nav" class="hide">
+        <li>
+          <a href="https://erlacla.github.io/wdd230/chamberOfCommerce/mesa">Mesa</a>
+        </li>
+        <li>
+          <a href="https://erlacla.github.io/wdd230/chamberOfCommerce/join">Join</a>
+        </li>
+        <li>
+          <a href="https://erlacla.github.io/wdd230/chamberOfCommerce/directory">Directory</a>
+        </li>
+        <li>
+          <a href="https://erlacla.github.io/wdd230/chamberOfCommerce/contact">Contact</a>
+        </li>
+      </ul>
+    </nav>
+
+    <img id="search" src="images/search.png" alt="Search icon" />
+  </header>
+  <main>
+    <div class="lgView">
+      <div class="main-top">
+        <h1>The Mesa Chamber of Commerce</h1>
+        <div class="yellowBox">
           <h2>Who are we and what is our mission?</h2>
           <p>
-            It is a local association of people devoted to the growth and
+            We are a local association of people devoted to the growth and
             prosperity of Mesa, AZ. We work together to build a strong economy,
             and community by strengthening and supporting small businesses, help
             grow our unique industries, improve education and transportation,
@@ -86,150 +68,122 @@
           </p>
           <input class="submitBtn" type="submit" value="Join now!" />
         </div>
+      </div>
 
-        <div class="homegrid">
-          <div class="grid-lines">
-            <span class="grid-top" id="day1"></span>
-            <span id="forecast1"></span>
-            <span id="description1"></span>
-            <img id="icon1" src="images/sun.png" alt="Current weather icon" />
-            <span id="humidity1"></span>
+      <div class="homegrid">
+        <div class="grid-lines">
+          <span class="grid-top" id="day1"></span>
+          <span id="forecast1"></span>
+          <span id="description1"></span>
+          <img id="icon1" src="images/sun.png" alt="Current weather icon" />
+          <span id="humidity1"></span>
+        </div>
+        <div class="grid-lines">
+          <span class="grid-top" id="day2"></span>
+          <span id="forecast2"></span>
+          <span id="description2"></span>
+          <img id="icon2" src="images/sun.png" alt="Current weather icon" />
+          <span id="humidity2"></span>
+        </div>
+        <div class="grid-lines">
+          <span class="grid-top" id="day3"></span>
+          <span id="forecast3"></span>
+          <span id="description3"></span>
+          <img id="icon3" src="images/sun.png" alt="Current weather icon" />
+          <span id="humidity3"></span>
+        </div>
+        <div class="grid-lines">
+          <span class="grid-top" id="day4"></span>
+          <span id="forecast4"></span>
+          <span id="description4"></span>
+          <img id="icon4" src="images/sun.png" alt="Current weather icon" />
+          <span id="humidity4"></span>
+        </div>
+      </div>
+    </div>
+
+    <div class="largeflex">
+      <div class="container">
+        <div class="content">
+          <a href="mesa.html"></a>
+          <div class="content-overlay"></div>
+          <img class="content-image" src="images/visitMesa400.jpg" alt="Downtown Mesa, AZ" />
+          <div class="content-details fadeIn-bottom">
+            <h2>Visit Mesa!</h2>
+            <p>See why now is the best time to visit!</p>
           </div>
-          <div class="grid-lines">
-            <span class="grid-top" id="day2"></span>
-            <span id="forecast2"></span>
-            <span id="description2"></span>
-            <img id="icon2" src="images/sun.png" alt="Current weather icon" />
-            <span id="humidity2"></span>
+        </div>
+        <div class="content">
+          <a href="mesa.html"></a>
+          <div class="content-overlay"></div>
+          <img class="content-image" src="images/bigEvent400.jpg" alt="Grand opening in Riverview" />
+          <div class="content-details fadeIn-bottom">
+            <h2>Grand opening at Riverview</h2>
+            <p>Several new business opening!</p>
           </div>
-          <div class="grid-lines">
-            <span class="grid-top" id="day3"></span>
-            <span id="forecast3"></span>
-            <span id="description3"></span>
-            <img id="icon3" src="images/sun.png" alt="Current weather icon" />
-            <span id="humidity3"></span>
+        </div>
+        <div class="content">
+          <a href="mesa.html"></a>
+          <div class="content-overlay"></div>
+          <img class="content-image" src="images/recentNews400.jpg" alt="Mesa Temple renovation" />
+          <div class="content-details fadeIn-bottom">
+            <h2>Updates on the Renovation</h2>
+            <p>The historic Mesa, Temple reno is progressing!</p>
           </div>
-          <div class="grid-lines">
-            <span class="grid-top" id="day4"></span>
-            <span id="forecast4"></span>
-            <span id="description4"></span>
-            <img id="icon4" src="images/sun.png" alt="Current weather icon" />
-            <span id="humidity4"></span>
+        </div>
+        <div class="content">
+          <a href="mesa.html"></a>
+          <div class="content-overlay"></div>
+          <img class="content-image" src="images/recentArticle400.jpg" alt="Mesa Temple before closure" />
+          <div class="content-details fadeIn-bottom">
+            <h2>Priceless</h2>
+            <p>Photographers capture photos before the temple closure</p>
           </div>
         </div>
       </div>
-
-      <div class="largeflex">
-        <div class="container">
-          <div class="content">
-            <a href="mesa.html"></a>
-            <div class="content-overlay"></div>
-            <img
-              class="content-image"
-              src="images/visitMesa400.jpg"
-              alt="Downtown Mesa, AZ"
-            />
-            <div class="content-details fadeIn-bottom">
-              <h2>Visit Mesa!</h2>
-              <p>See why now is the best time to visit!</p>
-            </div>
-          </div>
-          <div class="content">
-            <a href="mesa.html"></a>
-            <div class="content-overlay"></div>
-            <img
-              class="content-image"
-              src="images/bigEvent400.jpg"
-              alt="Grand opening in Riverview"
-            />
-            <div class="content-details fadeIn-bottom">
-              <h2>Grand opening at Riverview</h2>
-              <p>Several new business opening!</p>
-            </div>
-          </div>
-          <div class="content">
-            <a href="mesa.html"></a>
-            <div class="content-overlay"></div>
-            <img
-              class="content-image"
-              src="images/recentNews400.jpg"
-              alt="Mesa Temple renovation"
-            />
-            <div class="content-details fadeIn-bottom">
-              <h2>Updates on the Renovation</h2>
-              <p>The historic Mesa, Temple reno is progressing!</p>
-            </div>
-          </div>
-          <div class="content">
-            <a href="mesa.html"></a>
-            <div class="content-overlay"></div>
-            <img
-              class="content-image"
-              src="images/recentArticle400.jpg"
-              alt="Mesa Temple before closure"
-            />
-            <div class="content-details fadeIn-bottom">
-              <h2>Priceless</h2>
-              <p>Photographers capture photos before the temple closure</p>
-            </div>
-          </div>
-        </div>
-        <div class="adds">
-          <img src="images/addOne300.jpg" alt="Advertisement logo" />
-          <img src="images/addThree300.jpg" alt="Advertisement logo 2" />
-          <img src="images/addTwo300.jpg" alt="Advertisement logo 3" />
-          <p>
-            Chamber members are eligible to advertise here!<br />Join today!
-          </p>
-        </div>
-      </div>
-
-    </main>
-
-    <footer>
-      <div class="social-media">
-        <a href="https://www.facebook.com"
-          ><img src="images/facebook.png" alt="Facebook Icon"
-        /></a>
-        <a href="https://www.youtube.com"
-          ><img src="images/youtube.png" alt="Youtube Icon"
-        /></a>
-        <a href="https://twitter.com"
-          ><img src="images/twitter.png" alt="Twitter Icon"
-        /></a>
-        <a href="https://www.instagram.com"
-          ><img src="images/instagram.png" alt="Instagram Icon"
-        /></a>
-        <a href="https://www.linkedin.com/"
-          ><img src="images/linkedin.png" alt="Linkedin Icon"
-        /></a>
-      </div>
-
-      <div class="footersection">
-        <img
-          id="footlogo"
-          src="images/footlogo150.jpg"
-          alt="Mesa Chamber of Commerce logo"
-        />
+      <div class="adds">
+        <img src="images/addOne300.jpg" alt="Advertisement logo" />
+        <img src="images/addThree300.jpg" alt="Advertisement logo 2" />
+        <img src="images/addTwo300.jpg" alt="Advertisement logo 3" />
         <p>
-          3952 South Mesa Cir. Unit 103
-          <br />
-          Mesa, AZ 85203-0527
-          <br />
-          <br />
-          <a href="tel:4802901884">(480) 290-1884</a>
+          Chamber members are eligible to advertise here!<br />Join today!
         </p>
-        <input class="submitBtn" type="submit" value="Join our Chamber now!" />
       </div>
-      <h3>&copy;2021 Mesa Chamber of Commerce</h3>
-      <div class="lmodified">Last modified on <span id="modified"></span></div>
-    </footer>
+    </div>
 
-    <script src="js/index.js"></script>
-    <script src="js/forecast.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
-    <script>
-      WebFont.load({ google: { families: ["Montserrat", "Open Sans"] } });
-    </script>
-  </body>
+  </main>
+
+  <footer>
+    <div class="social-media">
+      <a href="https://www.facebook.com"><img src="images/facebook.png" alt="Facebook Icon" /></a>
+      <a href="https://www.youtube.com"><img src="images/youtube.png" alt="Youtube Icon" /></a>
+      <a href="https://twitter.com"><img src="images/twitter.png" alt="Twitter Icon" /></a>
+      <a href="https://www.instagram.com"><img src="images/instagram.png" alt="Instagram Icon" /></a>
+      <a href="https://www.linkedin.com/"><img src="images/linkedin.png" alt="Linkedin Icon" /></a>
+    </div>
+
+    <div class="footersection">
+      <img id="footlogo" src="images/footlogo150.jpg" alt="Mesa Chamber of Commerce logo" />
+      <p>
+        3952 South Mesa Cir. Unit 103
+        <br />
+        Mesa, AZ 85203-0527
+        <br />
+        <br />
+        <a href="tel:4802901884">(480) 290-1884</a>
+      </p>
+      <input class="submitBtn" type="submit" value="Join our Chamber now!" />
+    </div>
+    <h3>&copy;2021 Mesa Chamber of Commerce</h3>
+    <div class="lmodified">Last modified on <span id="modified"></span></div>
+  </footer>
+
+  <script src="js/index.js"></script>
+  <script src="js/forecast.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+  <script>
+    WebFont.load({ google: { families: ["Montserrat", "Open Sans"] } });
+  </script>
+</body>
+
 </html>

@@ -1,182 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mesa Chamber of Commerce</title>
-    <meta
-      name="description"
-      content="Join Mesa Chamber of Commerce! We promote strong communities, 
-      support local businesses, and keep you informed"
-    />
-    <link rel="shortcut icon" href="../mesaicon.ico" type="image/x-icon" />
-    <link rel="stylesheet" href="../css/normalize.css" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="css/small.css" />
-    <link rel="stylesheet" href="css/medium.css" />
-    <link rel="stylesheet" href="css/large.css" />
-  </head>
-  <body>
-    <header>
-      <a href="index.html"
-        ><img src="images/logo400.jpg" alt="Chamber of Commerce Logo"
-      /></a>
 
-      <nav>
-        <button onclick="toggleMenu()">&#9776;</button>
-        <ul id="nav" class="hide">
-          <li>
-            <a href="https://erlacla.github.io/wdd230/chamberOfCommerce/mesa"
-              >Mesa</a
-            >
-          </li>
-          <li>
-            <a href="https://erlacla.github.io/wdd230/chamberOfCommerce/join"
-              >Join</a
-            >
-          </li>
-          <li>
-            <a
-              href="https://erlacla.github.io/wdd230/chamberOfCommerce/directory"
-              >Directory</a
-            >
-          </li>
-          <li>
-            <a
-              href="https://erlacla.github.io/wdd230/chamberOfCommerce/contact"
-              id="active"
-              >Contact</a
-            >
-          </li>
-        </ul>
-      </nav>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mesa Chamber of Commerce</title>
+  <meta name="description" content="Join Mesa Chamber of Commerce! We promote strong communities, 
+      support local businesses, and keep you informed" />
+  <link rel="shortcut icon" href="../mesaicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="../css/normalize.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/small.css" />
+  <link rel="stylesheet" href="css/medium.css" />
+  <link rel="stylesheet" href="css/large.css" />
+</head>
 
-      <img id="search" src="images/search.png" alt="Search icon" />
-    </header>
-    <main>
-      <h1>Get in Touch</h1>
-      <div class="sideBySide">
-        <section class="contactInfo">
-          <picture>
-            <source srcset="images/contact300.jpg" media="(min-width: 992px)" />
-            <img src="images/contact768.jpg" alt="Clasping wrists" />
-          </picture>
-          <h2>Contact Info</h2>
-          <p>
-            3952 South Mesa Cir. Unit 103
-            <br />
-            Mesa, AZ 85203-0527
-            <br />
-            <br />
-            <a href="tel:4802901884">(480) 290-1884</a>
-          </p>
-          <div id="map">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d213187.57239882834!2d-111.87784610816935!3d33.39570791216217!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872ba7c2c0c592c1%3A0xd10fc215694e771b!2sMesa%2C%20AZ!5e0!3m2!1sen!2sus!4v1617832289681!5m2!1sen!2sus" width="251" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-        </div>
-      </section>
+<body>
+  <header>
+    <a href="index.html"><img src="images/logo400.jpg" alt="Chamber of Commerce Logo" /></a>
 
-        <section>
-          <h2>
-            Have a question about our Chamber of Commerce? Need information
-            about Mesa, AZ? Fill out the contact form and a member of our staff
-            will respond promptly.
-          </h2>
-          <h3>Board of Directors</h3>
-          <ul>
-            <li>Nancy Walker - Chair</li>
-            <li>Jim Daniels - Executive Committee Head</li>
-            <li>Shannon Giles - Executive Committee VP</li>
-            <li>Harry Kennon - Chamber Board Chair</li>
-            <li>Philip Goshen - Chamber Board Co-Chair</li>
-          </ul>
+    <nav>
+      <button onclick="toggleMenu()">&#9776;</button>
+      <ul id="nav" class="hide">
+        <li>
+          <a href="https://erlacla.github.io/wdd230/chamberOfCommerce/mesa">Mesa</a>
+        </li>
+        <li>
+          <a href="https://erlacla.github.io/wdd230/chamberOfCommerce/join">Join</a>
+        </li>
+        <li>
+          <a href="https://erlacla.github.io/wdd230/chamberOfCommerce/directory">Directory</a>
+        </li>
+        <li>
+          <a href="https://erlacla.github.io/wdd230/chamberOfCommerce/contact" id="active">Contact</a>
+        </li>
+      </ul>
+    </nav>
 
-          <form name="form" action="thanks.html" method="get">
-            <h2>Contact Form</h2>
-            <fieldset>
-              <div class="form-box">
-                <label for="name"></label>
-                <input
-                  type="text"
-                  name="name"
-                  id="name"
-                  required="required"
-                  pattern="[A-Za-z]{5+}"
-                  autocomplete="name"
-                  placeholder="Name*"
-                />
-              </div>
-              <div class="form-box">
-                <label for="email"></label>
-                <input
-                  type="email"
-                  id="email"
-                  required="required"
-                  name="email"
-                  placeholder="Email*"
-                />
-              </div>
-
-              <div class="form-box">
-                <label for="phone"></label>
-                <input
-                  type="tel"
-                  id="phone"
-                  name="phone"
-                  pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
-                  placeholder="Phone*"
-                />
-              </div>
-              <div class="form-box">
-                <label for="info"></label>
-                <textarea
-                  id="info"
-                  name="info"
-                  rows="3"
-                  cols="20"
-                  placeholder="Please type your question or message here"
-                ></textarea>
-              </div>
-            </fieldset>
-            <br />
-            <input class="submitBtn" type="submit" value="Submit" />
-          </form>
-        </section>
-      </div>
-    </main>
-
-    <footer>
-      <div class="social-media">
-        <a href="https://www.facebook.com"
-          ><img src="images/facebook.png" alt="Facebook Icon"
-        /></a>
-        <a href="https://www.youtube.com"
-          ><img src="images/youtube.png" alt="Youtube Icon"
-        /></a>
-        <a href="https://twitter.com"
-          ><img src="images/twitter.png" alt="Twitter Icon"
-        /></a>
-        <a href="https://www.instagram.com"
-          ><img src="images/instagram.png" alt="Instagram Icon"
-        /></a>
-        <a href="https://www.linkedin.com/"
-          ><img src="images/linkedin.png" alt="Linkedin Icon"
-        /></a>
-      </div>
-
-      <div class="footersection">
-        <img
-          id="footlogo"
-          src="images/footlogo150.jpg"
-          alt="Mesa Chamber of Commerce logo"
-        />
+    <img id="search" src="images/search.png" alt="Search icon" />
+  </header>
+  <main>
+    <h1>Get in Touch</h1>
+    <div class="sideBySide">
+      <section class="contactInfo">
+        <picture>
+          <source srcset="images/contact300.jpg" media="(min-width: 992px)" />
+          <img src="images/contact768.jpg" alt="Clasping wrists" />
+        </picture>
+        <h2>Contact Info</h2>
         <p>
           3952 South Mesa Cir. Unit 103
           <br />
@@ -185,16 +58,89 @@
           <br />
           <a href="tel:4802901884">(480) 290-1884</a>
         </p>
-        <input class="submitBtn" type="submit" value="Join our Chamber now!" />
-      </div>
-      <h3>&copy;2021 Mesa Chamber of Commerce</h3>
-      <div class="lmodified">Last modified on <span id="modified"></span></div>
-    </footer>
+        <div id="map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d213187.57239882834!2d-111.87784610816935!3d33.39570791216217!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872ba7c2c0c592c1%3A0xd10fc215694e771b!2sMesa%2C%20AZ!5e0!3m2!1sen!2sus!4v1617832289681!5m2!1sen!2sus"
+            width="251" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+      </section>
 
-    <script src="js/index.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
-    <script>
-      WebFont.load({ google: { families: ["Montserrat", "Open Sans"] } });
-    </script>
-  </body>
+      <section>
+        <div class="yellowBox">
+        <h2>
+          Have a question about our Chamber of Commerce? Need information
+          about Mesa, AZ? Fill out the contact form and a member of our staff
+          will respond promptly.
+        </h2>
+        <h3>Board of Directors</h3>
+        <ul>
+          <li>Nancy Walker - Chair</li>
+          <li>Jim Daniels - Executive Committee Head</li>
+          <li>Shannon Giles - Executive Committee VP</li>
+          <li>Harry Kennon - Chamber Board Chair</li>
+          <li>Philip Goshen - Chamber Board Co-Chair</li>
+        </ul></div>
+
+        <form name="form" action="thanks.html" method="get">
+          <h2>Contact Form</h2>
+          <fieldset>
+            <div class="form-box">
+              <label for="name"></label>
+              <input type="text" name="name" id="name" required="required" pattern="[A-Za-z]{5+}" autocomplete="name"
+                placeholder="Name*" />
+            </div>
+            <div class="form-box">
+              <label for="email"></label>
+              <input type="email" id="email" required="required" name="email" placeholder="Email*" />
+            </div>
+
+            <div class="form-box">
+              <label for="phone"></label>
+              <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="Phone*" />
+            </div>
+            <div class="form-box">
+              <label for="info"></label>
+              <textarea id="info" name="info" rows="3" cols="20"
+                placeholder="Please type your question or message here"></textarea>
+            </div>
+          </fieldset>
+          <br />
+          <input class="submitBtn" type="submit" value="Submit" />
+        </form>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <div class="social-media">
+      <a href="https://www.facebook.com"><img src="images/facebook.png" alt="Facebook Icon" /></a>
+      <a href="https://www.youtube.com"><img src="images/youtube.png" alt="Youtube Icon" /></a>
+      <a href="https://twitter.com"><img src="images/twitter.png" alt="Twitter Icon" /></a>
+      <a href="https://www.instagram.com"><img src="images/instagram.png" alt="Instagram Icon" /></a>
+      <a href="https://www.linkedin.com/"><img src="images/linkedin.png" alt="Linkedin Icon" /></a>
+    </div>
+
+    <div class="footersection">
+      <img id="footlogo" src="images/footlogo150.jpg" alt="Mesa Chamber of Commerce logo" />
+      <p>
+        3952 South Mesa Cir. Unit 103
+        <br />
+        Mesa, AZ 85203-0527
+        <br />
+        <br />
+        <a href="tel:4802901884">(480) 290-1884</a>
+      </p>
+      <input class="submitBtn" type="submit" value="Join our Chamber now!" />
+    </div>
+    <h3>&copy;2021 Mesa Chamber of Commerce</h3>
+    <div class="lmodified">Last modified on <span id="modified"></span></div>
+  </footer>
+
+  <script src="js/index.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+  <script>
+    WebFont.load({ google: { families: ["Montserrat", "Open Sans"] } });
+  </script>
+</body>
+
 </html>

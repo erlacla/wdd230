@@ -1,296 +1,210 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mesa Chamber of Commerce</title>
-    <meta
-      name="description"
-      content="Join Mesa Chamber of Commerce! We promote strong communities, 
-      support local businesses, and keep you informed"
-    />
-    <link rel="shortcut icon" href="../mesaicon.ico" type="image/x-icon" />
-    <link rel="stylesheet" href="../css/normalize.css" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="css/small.css" />
-    <link rel="stylesheet" href="css/medium.css" />
-    <link rel="stylesheet" href="css/large.css" />
-  </head>
-  <body>
-    <header>
-      <a href="index.html"
-        ><img src="images/logo400.jpg" alt="Chamber of Commerce Logo"
-      /></a>
 
-      <nav>
-        <button onclick="toggleMenu()">&#9776;</button>
-        <ul id="nav" class="hide">
-          <li>
-            <a href="https://erlacla.github.io/wdd230/chamberOfCommerce/mesa"
-              >Mesa</a
-            >
-          </li>
-          <li>
-            <a href="https://erlacla.github.io/wdd230/chamberOfCommerce/join" id="active"
-              >Join</a
-            >
-          </li>
-          <li>
-            <a href="https://erlacla.github.io/wdd230/chamberOfCommerce/directory">Directory</a>
-          </li>
-          <li>
-            <a href="https://erlacla.github.io/wdd230/chamberOfCommerce/contact"
-              >Contact</a
-            >
-          </li>
-        </ul>
-      </nav>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mesa Chamber of Commerce</title>
+  <meta name="description" content="Join Mesa Chamber of Commerce! We promote strong communities, 
+      support local businesses, and keep you informed" />
+  <link rel="shortcut icon" href="../mesaicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="../css/normalize.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/small.css" />
+  <link rel="stylesheet" href="css/medium.css" />
+  <link rel="stylesheet" href="css/large.css" />
+</head>
 
-      <img id="search" src="images/search.png" alt="Search icon" />
-    </header>
-    <main>
-        
-          
-      <h1>Join Our Commerce Today!</h1>
-      <div class="sideBySide">
-<section>
-        <picture>
-          <source srcset="images/cactus300.jpg"
-                  media="(min-width: 992px)">
-          <img src="images/cactusWide.jpg" alt="Mesa Cactus" />
-      </picture>
+<body>
+  <header>
+    <a href="index.html"><img src="images/logo400.jpg" alt="Chamber of Commerce Logo" /></a>
 
-    
-    <div id="key">
-      <h2>Membership Levels include</h2>
-      <ul>
-        <li>Non-profit($100) - Access to exclusive networking directory.</li>
-        <li>Bronze($200) - Access to the directory and eligible to attend renown
-          business and leadership training.
+    <nav>
+      <button onclick="toggleMenu()">&#9776;</button>
+      <ul id="nav" class="hide">
+        <li>
+          <a href="https://erlacla.github.io/wdd230/chamberOfCommerce/mesa">Mesa</a>
         </li>
-        <li>Silver($400) - Access to directory, business and leadership training,
-          and ten tickets for the quarterly chamber luncheon with keynote speakers.
+        <li>
+          <a href="https://erlacla.github.io/wdd230/chamberOfCommerce/join" id="active">Join</a>
         </li>
-        <li>Gold($1000) - Access to all of the above, plus sponsorship advertizing
-          on the chamber website, at the trainings and luncheons, and on our
-        social media page.</li>
+        <li>
+          <a href="https://erlacla.github.io/wdd230/chamberOfCommerce/directory">Directory</a>
+        </li>
+        <li>
+          <a href="https://erlacla.github.io/wdd230/chamberOfCommerce/contact">Contact</a>
+        </li>
       </ul>
-    </div>
-  </section>
-<section >
-  <div id="joinSec">
-<h2>Gain access to:</h2>
-      <ul>
-          <li>City Advocacy</li>
-          <li>Exclusive Updates</li>
-          <li>Expansive Networking Opportunities</li>
-          <li>Ribbon-cutting Ceremonies</li>
-          <li>Local Discounts</li>
-          <li>And So Much More...</li>
-      </ul></div>
-      <form name="form" action="thanks.html" method="get">
-       <h2>Membership Form</h2>
-        <fieldset>
-          
-          <div class="form-box">
-            <label for="fname"></label>
-            <input
-              type="text"
-              name="fname"
-              id="fname"
-              required="required"
-              pattern="[A-Za-z]{5+}"
-              autocomplete="name"
-              placeholder="First Name*"
-            />
-          </div>
+    </nav>
 
-          <div class="form-box">
-            <label for="lname"></label>
-            <input
-              type="text"
-              name="lname"
-              id="lname"
-              required="required"
-              pattern="[A-Za-z]{5+}"
-              autocomplete="name"
-              placeholder="Last Name*"
-            />
-          </div>
+    <img id="search" src="images/search.png" alt="Search icon" />
+  </header>
+  <main>
 
-          <div class="form-box">
-            <label for="tname"></label>
-            <input
-              type="text"
-              name="tname"
-              id="tname"
-              required="required"
-              pattern="[A-Za-z]{5+}"
-              autocomplete="name"
-              placeholder="Title"
-            />
-          </div>
 
-          <div class="form-box">
-            <label for="email"></label>
-            <input
-              type="email"
-              id="email"
-              required="required"
-              name="email"
-              placeholder="email@example.com"
-            />
-          </div>
+    <h1>Join Our Commerce Today!</h1>
+    <div class="sideBySide">
+      <section>
+        <picture>
+          <source srcset="images/cactus300.jpg" media="(min-width: 992px)">
+          <img src="images/cactusWide.jpg" alt="Mesa Cactus" />
+        </picture>
 
-          <div class="form-box">
-            <label for="phone"></label>
-            <input
-              type="tel"
-              id="phone"
-              name="phone"
-              pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
-              placeholder="Phone*"
-            />
-          </div>
-</fieldset>
-<br /><br />
-        <fieldset>
 
-          <div class="form-box">
-            <label for="name"></label>
-            <input
-              type="text"
-              name="name"
-              id="name"
-              required="required"
-              pattern="[A-Za-z]{5+}"
-              autocomplete="name"
-              placeholder="Business Name*"
-            />
-          </div>
-
-          <div class="form-box">
-            <label for="address"></label>
-             <input 
-             type="text" 
-            name="address"
-             id="address"  
-             placeholder="Street Address"
-             />
-            </div>
-
-            <div class="form-box">
-                <label for="city"></label>
-            <input 
-            type="text" 
-            id="city" 
-            name="city" 
-            placeholder="City"
-            />
+        <div id="key">
+          <h2>Membership Levels include</h2>
+          <ul>
+            <li>Non-profit($100) - Access to exclusive networking directory.</li>
+            <li>Bronze($200) - Access to the directory and eligible to attend renown
+              business and leadership training.
+            </li>
+            <li>Silver($400) - Access to directory, business and leadership training,
+              and ten tickets for the quarterly chamber luncheon with keynote speakers.
+            </li>
+            <li>Gold($1000) - Access to all of the above, plus sponsorship advertizing
+              on the chamber website, at the trainings and luncheons, and on our
+              social media page.</li>
+          </ul>
         </div>
+      </section>
+      <section>
+        <div class="yellowBox">
+          <h2>Gain access to:</h2>
+          <ul>
+            <li>City Advocacy</li>
+            <li>Exclusive Updates</li>
+            <li>Expansive Networking Opportunities</li>
+            <li>Ribbon-cutting Ceremonies</li>
+            <li>Local Discounts</li>
+            <li>And So Much More...</li>
+          </ul>
+        </div>
+        <form name="form" action="thanks.html" method="get">
+          <h2>Membership Form</h2>
+          <fieldset>
 
-        <div class="form-box">
-            <label for="state"></label>
-        <input 
-        type="text" 
-        id="state" 
-        name="state" 
-        placeholder="State"
-        />
-      </div>
-
-          <div class="form-box">
-            <label for="zip"></label>
-            <input type="number" 
-            id="zip" 
-            name="zip"
-            placeholder="Zipcode"
-            />
-          </div>
-        
-          <div class="form-box">
-            <label for="website"></label>
-             <input 
-             type="text" 
-            name="website"
-             id="website"  
-             placeholder="Business Website"
-             pattern="http\://[a-zA-Z0-9-\.]+\.[a-zA-Z]{2,3}(/\S*)?$"
-             />
+            <div class="form-box">
+              <label for="fname"></label>
+              <input type="text" name="fname" id="fname" required="required" pattern="[A-Za-z]{5+}" autocomplete="name"
+                placeholder="First Name*" />
             </div>
 
             <div class="form-box">
-                <label for="info"></label>
-                <textarea
-                  id="info"
-                  name="info"
-                  rows="3"
-                  cols="20"
-                  placeholder="Business Description:"
-                ></textarea>
-              </div>
+              <label for="lname"></label>
+              <input type="text" name="lname" id="lname" required="required" pattern="[A-Za-z]{5+}" autocomplete="name"
+                placeholder="Last Name*" />
+            </div>
 
-          <div class="form-box">
-            <label for="levelType">Membership Level Selection:</label>
-            <input list="type" id="levelType" name="levelType" />
-            <datalist id="type">
-              <option value="Non-profit($100)"></option>
-              <option value="Bronze($200)"></option>
-              <option value="Silver($400)"></option>
-              <option value="Gold($1000)"></option>
-            </datalist>
-          </div>
-        </fieldset>
-        <br />
-        <input class="submitBtn" type="submit" value="Join Chamber" />
-      </form>
-</section>
-      </div>
+            <div class="form-box">
+              <label for="tname"></label>
+              <input type="text" name="tname" id="tname" required="required" pattern="[A-Za-z]{5+}" autocomplete="name"
+                placeholder="Title" />
+            </div>
+
+            <div class="form-box">
+              <label for="email"></label>
+              <input type="email" id="email" required="required" name="email" placeholder="email@example.com" />
+            </div>
+
+            <div class="form-box">
+              <label for="phone"></label>
+              <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="Phone*" />
+            </div>
+          </fieldset>
+          <br /><br />
+          <fieldset>
+
+            <div class="form-box">
+              <label for="name"></label>
+              <input type="text" name="name" id="name" required="required" pattern="[A-Za-z]{5+}" autocomplete="name"
+                placeholder="Business Name*" />
+            </div>
+
+            <div class="form-box">
+              <label for="address"></label>
+              <input type="text" name="address" id="address" placeholder="Street Address" />
+            </div>
+
+            <div class="form-box">
+              <label for="city"></label>
+              <input type="text" id="city" name="city" placeholder="City" />
+            </div>
+
+            <div class="form-box">
+              <label for="state"></label>
+              <input type="text" id="state" name="state" placeholder="State" />
+            </div>
+
+            <div class="form-box">
+              <label for="zip"></label>
+              <input type="number" id="zip" name="zip" placeholder="Zipcode" />
+            </div>
+
+            <div class="form-box">
+              <label for="website"></label>
+              <input type="text" name="website" id="website" placeholder="Business Website"
+                pattern="http\://[a-zA-Z0-9-\.]+\.[a-zA-Z]{2,3}(/\S*)?$" />
+            </div>
+
+            <div class="form-box">
+              <label for="info"></label>
+              <textarea id="info" name="info" rows="3" cols="20" placeholder="Business Description:"></textarea>
+            </div>
+
+            <div class="form-box">
+              <label for="levelType">Membership Level Selection:</label>
+              <input list="type" id="levelType" name="levelType" />
+              <datalist id="type">
+                <option value="Non-profit($100)"></option>
+                <option value="Bronze($200)"></option>
+                <option value="Silver($400)"></option>
+                <option value="Gold($1000)"></option>
+              </datalist>
+            </div>
+          </fieldset>
+          <br />
+          <input class="submitBtn" type="submit" value="Join Chamber" />
+        </form>
+      </section>
+    </div>
 
   </main>
 
-    <footer> 
-      <div class="social-media">
-          <a href="https://www.facebook.com"><img src="images/facebook.png" alt="Facebook Icon" /></a>
-          <a href="https://www.youtube.com"><img src="images/youtube.png" alt="Youtube Icon" /></a>
-          <a href="https://twitter.com"><img src="images/twitter.png" alt="Twitter Icon" /></a>
-          <a href="https://www.instagram.com"
-            ><img src="images/instagram.png" alt="Instagram Icon"
-          /></a>
-          <a href="https://www.linkedin.com/"><img src="images/linkedin.png" alt="Linkedin Icon" /></a>
-        </div>
-      
-      <div class="footersection">
-        <img id="footlogo" src="images/footlogo150.jpg" alt="Mesa Chamber of Commerce logo" />
-        <p>3952 South Mesa Cir. Unit 103
-          <br>
-          Mesa, AZ 85203-0527
-          <br>
-          <br>
-          <a href="tel:4802901884">(480) 290-1884</a>
-        </p>
-        <input class="submitBtn" type="submit" value="Join our Chamber now!" />
-       
-        
-        
-        
-      </div>
-      <h3>&copy;2021 Mesa Chamber of Commerce</h3>
-      <div class="lmodified">Last modified on <span id="modified"></span></div>
-    </footer>
+  <footer>
+    <div class="social-media">
+      <a href="https://www.facebook.com"><img src="images/facebook.png" alt="Facebook Icon" /></a>
+      <a href="https://www.youtube.com"><img src="images/youtube.png" alt="Youtube Icon" /></a>
+      <a href="https://twitter.com"><img src="images/twitter.png" alt="Twitter Icon" /></a>
+      <a href="https://www.instagram.com"><img src="images/instagram.png" alt="Instagram Icon" /></a>
+      <a href="https://www.linkedin.com/"><img src="images/linkedin.png" alt="Linkedin Icon" /></a>
+    </div>
 
-    <script src="js/index.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
-    <script>
-      WebFont.load({ google: { families: ["Montserrat", "Open Sans"] } });
-    </script>
-  </body>
+    <div class="footersection">
+      <img id="footlogo" src="images/footlogo150.jpg" alt="Mesa Chamber of Commerce logo" />
+      <p>3952 South Mesa Cir. Unit 103
+        <br>
+        Mesa, AZ 85203-0527
+        <br>
+        <br>
+        <a href="tel:4802901884">(480) 290-1884</a>
+      </p>
+      <input class="submitBtn" type="submit" value="Join our Chamber now!" />
+
+
+
+
+    </div>
+    <h3>&copy;2021 Mesa Chamber of Commerce</h3>
+    <div class="lmodified">Last modified on <span id="modified"></span></div>
+  </footer>
+
+  <script src="js/index.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+  <script>
+    WebFont.load({ google: { families: ["Montserrat", "Open Sans"] } });
+  </script>
+</body>
+
 </html>
