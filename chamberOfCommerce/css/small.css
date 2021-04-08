@@ -11,8 +11,8 @@ html {
 h1,
 h2 {
   font-family: "Montserrat", sans-serif;
-  padding: 10px;
-  margin: 10px;
+  padding: 20px;
+  margin: 20px;
 }
 p, footer{
   font-family: "Open Sans", sans-serif;
@@ -141,6 +141,7 @@ nav ul.hide {
   margin-right: auto;
   width: 400px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  line-height: 0;
 }
 
 .content-details h2 {
@@ -161,7 +162,7 @@ nav ul.hide {
 .content .content-overlay {
   background: rgba(0, 0, 0, 0.7);
   position: absolute;
-  height: 99%;
+  height: 100%;
   width: 100%;
   left: 0;
   top: 0;
@@ -287,18 +288,85 @@ footer h3 {
   box-shadow: 0 1px 8px rgb(51 51 51 / 10%);
 }
 
-.mesaArticlesAndEvents section {
-  display: grid;
-  grid-template-columns: 1fr;
-  border: 2px solid #192f5d;
-  margin: 30px ;
-  padding: 20px;
-}
 
-.mesaArticlesAndEvents img {
-  padding: 20px;
-  width: 60%;
-  
+  .under1 {
+    position: relative;
+    width: 900px;
+    height: 400px;
+    margin-bottom: 20px;
+  }
+
+  .over1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color:rgb(155, 41, 21, 0.808);
+    color: #fff;
+    width: 350px;
+    height: 400px;
+  }
+
+  .under2 {
+    position: relative;
+    width: 900px;
+    height: 400px;
+    margin-bottom: 20px;
+    display: block;
+    margin-left: auto;
+  }
+
+  .over2 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color:rgb(155, 41, 21, 0.808);
+    color: #fff;
+    width: 350px;
+    height: 400px;
+  }
+
+  .under3 {
+    position: relative;
+    width: 900px;
+    height: 400px;
+    margin-bottom: 20px;
+    display: block;
+    margin-right: auto;
+  }
+
+  .over3 {
+    position: absolute;
+    top: 20%;
+    left: 0;
+    background-color:rgb(155, 41, 21, 0.808);
+    color: #fff;
+    width: 898px;
+    height: 250px;
+  }
+
+  .under4 {
+    position: relative;
+    width: 900px;
+    height: 400px;
+    margin-bottom: 20px;
+    display: block;
+    margin-left: auto;
+  }
+
+  .over4 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color:rgb(155, 41, 21, 0.808);
+    color: #fff;
+    width: 350px;
+    height: 400px;
+  }
+
+
+  #flexImg {
+    display: flex;
+    width: 900px;
   }
 
 .contactInfo p, .contactInfo a {
